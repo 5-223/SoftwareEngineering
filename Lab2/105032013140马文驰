@@ -1,0 +1,189 @@
+//*********************************************************
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<conio.h>
+//*********************************************************
+typedef struct 
+{
+	char name[20];
+	float score;
+}STD;
+typedef struct 
+{
+	STD *data;
+	int length;
+	int sizelist;
+}SqList;
+//*********************************************************
+int menu();
+void init(SqList *L,int max);
+void create(SqList *L);
+void insert(SqList *L,int i,STD x);
+void Delete(SqList *L,int i,STD *x);
+int search(SqList L,char *name);
+void dis(SqList L);
+void update(SqList L,int i,STD x);
+//*********************************************************
+int main()
+{
+	SqList L;
+	int i,n,max;
+	STD x;
+	char name[20];
+	while(1)
+	{
+		n=menu();
+		switch(n)
+		{
+		case 1:
+			{
+				printf("请输入初始化的人数\n");
+				scanf("%d",&max);
+				getchar();
+				init(&L,max);
+				break;
+			}
+		case 2:
+			{
+				create(&L);
+				break;
+			}
+		case 3:
+			{
+				printf("请输入插入的位置\n");
+				scanf("%d",&i);
+				getchar();
+				printf("请输入插入的信息(姓名、成绩)\n");
+				scanf("%s%f",x.name,&x.score);
+				getchar();
+				insert(&L,i,x);
+				break;
+			}
+		case 4:
+			{
+				printf("请输入删除人的姓名\n");
+				scanf("%s",name);
+				getchar();
+				i=search(L,name);
+				Delete(&L,i,&x);
+				printf("删除的信息为:\n%s\t%.1f\n",x.name,x.score);
+				getch();
+				break;
+			}
+		case 5:
+			{
+				dis(L);
+				getch();
+				break;
+			}
+		case 6:
+			{
+				printf("请输入要修改人的姓名\n");
+				scanf("%s",name);
+				getchar();
+				i=search(L,name);
+				printf("请输入修改后的信息(姓名)\n");
+				scanf("%s%f",x.name,&x.score);
+				getchar();
+				update(L,i,x);
+				break;
+			}
+		case 7:
+			{
+				printf("请输入要查找人的姓名\n");
+				scanf("%s",name);
+				getchar();
+				i=search(L,name);
+				printf("查找人的信息为:\n%s\t%.1f\n",L.data[i-1].name,L.data[i-1].score);
+				getch();
+				break;
+			}
+		case 0:
+			{
+				exit(0);
+			}
+		}
+	}
+}
+//*********************************************************
+int menu()
+{
+	int n;
+	while(1)
+	{
+		system("cls");
+		printf("*********** 基于顺序表的学生成绩管理系统 ************\n");
+		printf("1.初始化                                       2.创建\n");
+		printf("3.插入                                         4.删除\n");
+		printf("5.显示                                         6.修改\n");
+		printf("7.查找                                         0.退出\n");
+		printf("*****************************************************\n");
+		printf("请选择功能编号<0~7>\n");
+		scanf("%d",&n);
+		getchar();
+		if(n>=0&&n<=7)
+			return n;
+	}
+}
+//*********************************************************
+void init(SqList *L,int max)
+{
+	L->data=(STD *)malloc(sizeof(STD)*max);
+	L->length=0;
+	L->sizelist=max;
+}
+//*********************************************************
+void create(SqList *L)
+{
+	char ch;
+	do
+	{
+		printf("请输入第%d个人的信息(姓名、成绩)\n",L->length+1);
+		scanf("%s%f",L->data[L->length].name,&L->data[L->length].score);
+		getchar();
+		L->length=L->length+1;
+		printf("继续创建<Y/N>\n");
+		ch=getchar();
+		getchar();
+	}while(ch=='y'||ch=='Y');
+}
+//*********************************************************
+void insert(SqList *L,int i,STD x)
+{
+	int j;
+	for(j=L->length;j>=i;j--)
+		L->data[j]=L->data[j-1];
+	L->data[i-1]=x;
+	L->length=L->length+1;
+}
+//*********************************************************
+void Delete(SqList *L,int i,STD *x)
+{
+	int j;
+	*x=L->data[i-1];
+	for(j=i;j<L->length;j++)
+		L->data[j-1]=L->data[j];
+	L->length=L->length-1;
+}
+//*********************************************************
+int search(SqList L,char *name)
+{
+	int i;
+	for(i=0;i<L.length;i++)
+		if(strcmp(name,L.data[i].name)==0)
+			return i+1;
+}
+//*********************************************************
+void update(SqList L,int i,STD x)
+{
+	L.data[i-1]=x;
+}
+//*********************************************************
+void dis(SqList L)
+{
+	int i;
+	for(i=0;i<L.length;i++)
+		printf("%s\t%.1f\n",L.data[i].name,L.data[i].score);
+}
+//*********************************************************
