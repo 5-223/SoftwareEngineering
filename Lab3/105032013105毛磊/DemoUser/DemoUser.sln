@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoUser", "DemoUser\DemoUser.csproj", "{AD695F4B-7A1B-4266-80BD-D3F55724D627}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{D7B32ADC-D223-4542-93E3-5E9A73185BAB}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0254B1E6-5C68-410B-8318-C15C64F7C52C}"
+	ProjectSection(SolutionItems) = preProject
+		DemoUser.vsmdi = DemoUser.vsmdi
+		DemoUser1.vsmdi = DemoUser1.vsmdi
+		DemoUser2.vsmdi = DemoUser2.vsmdi
+		DemoUser3.vsmdi = DemoUser3.vsmdi
+		LocalTestRun.testrunconfig = LocalTestRun.testrunconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = DemoUser3.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AD695F4B-7A1B-4266-80BD-D3F55724D627}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD695F4B-7A1B-4266-80BD-D3F55724D627}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD695F4B-7A1B-4266-80BD-D3F55724D627}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD695F4B-7A1B-4266-80BD-D3F55724D627}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D7B32ADC-D223-4542-93E3-5E9A73185BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D7B32ADC-D223-4542-93E3-5E9A73185BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D7B32ADC-D223-4542-93E3-5E9A73185BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D7B32ADC-D223-4542-93E3-5E9A73185BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

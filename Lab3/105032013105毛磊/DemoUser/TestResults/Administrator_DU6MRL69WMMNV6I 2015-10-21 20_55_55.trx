@@ -1,0 +1,162 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="d4ba7c11-e236-432c-aba6-4178e62f45f8" name="Administrator@DU6MRL69WMMNV6I 2015-10-21 20:55:55" runUser="DU6MRL69WMMNV6I\Administrator" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="本地测试运行" id="4076fb99-a92d-4432-9d96-4d02bf257bdd">
+    <Description>这是本地测试运行的默认测试运行配置。</Description>
+    <Deployment runDeploymentRoot="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestResults\Administrator_DU6MRL69WMMNV6I 2015-10-21 20_55_55">
+      <DeploymentItem filename="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\DemoUser\bin\Debug\DemoUser.exe" />
+    </Deployment>
+    <CodeCoverage>
+      <Regular>
+        <CodeCoverageItem binaryFile="DemoUser\bin\Debug\DemoUser.exe" pdbFile="DemoUser\bin\Debug\DemoUser.pdb" instrumentInPlace="true" />
+        <CodeCoverageItem binaryFile="TestProject1\bin\Debug\TestProject1.dll" pdbFile="TestProject1\bin\Debug\TestProject1.pdb" instrumentInPlace="true" />
+      </Regular>
+    </CodeCoverage>
+    <TestTypeSpecific>
+      <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+        <Browser name="Internet Explorer 7.0">
+          <Headers>
+            <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+            <Header name="Accept" value="*/*" />
+            <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+            <Header name="Accept-Encoding" value="GZIP" />
+          </Headers>
+        </Browser>
+        <Network Name="LAN" BandwidthInKbps="0" />
+      </WebTestRunConfiguration>
+    </TestTypeSpecific>
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="7" executed="7" passed="2" error="0" failed="3" timeout="0" aborted="0" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2015-10-21T20:55:55.8813448+08:00" queuing="2015-10-21T20:55:57.9313477+08:00" start="2015-10-21T20:55:58.4613485+08:00" finish="2015-10-21T20:55:59.3313497+08:00" />
+  <TestDefinitions>
+    <UnitTest name="InterfaceTest" storage="e:\大三上学期\软件工程\软件工程实验3\ml\demouser\testproject1\bin\debug\testproject1.dll" id="1180a974-3385-e89f-5fe7-fd3c01e6b092">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="abbcae93-d174-42bd-96eb-9b470ca99558" />
+      <TestMethod codeBase="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="InterfaceTest" />
+    </UnitTest>
+    <UnitTest name="UserConstructorEmptyTest" storage="e:\大三上学期\软件工程\软件工程实验3\ml\demouser\testproject1\bin\debug\testproject1.dll" id="3393840d-e9a6-a6a7-c521-cccd30a65ca7">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="1439e4c8-e65b-459a-a7b5-0b817595ccea" />
+      <TestMethod codeBase="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="UserConstructorEmptyTest" />
+    </UnitTest>
+    <UnitTest name="UserConstructorTest" storage="e:\大三上学期\软件工程\软件工程实验3\ml\demouser\testproject1\bin\debug\testproject1.dll" id="540f0c17-3ca7-83ce-ee69-c545db0ff423">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="097f7c73-3514-4985-8565-c5cf1e848118" />
+      <TestMethod codeBase="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="UserConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ShowTest" storage="e:\大三上学期\软件工程\软件工程实验3\ml\demouser\testproject1\bin\debug\testproject1.dll" id="6cf9b48a-1c04-c64c-6be7-913e40ca4696">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d626284c-ec1b-4b55-addd-d338408d246c" />
+      <TestMethod codeBase="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="ShowTest" />
+    </UnitTest>
+    <UnitTest name="BorderTest" storage="e:\大三上学期\软件工程\软件工程实验3\ml\demouser\testproject1\bin\debug\testproject1.dll" id="72644784-0e09-737d-b576-d143a9e7a0e8">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="238a619e-3cbf-4fef-bc63-db22aadf39f9" />
+      <TestMethod codeBase="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="BorderTest" />
+    </UnitTest>
+    <UnitTest name="MainTest" storage="e:\大三上学期\软件工程\软件工程实验3\ml\demouser\testproject1\bin\debug\testproject1.dll" id="9a46fa9b-9a2e-3eff-02e4-ce3ff885083d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="DemoUser.exe" />
+      </DeploymentItems>
+      <Execution id="a516f16d-f1e2-4b1f-8964-3cfdd8c98c6d" />
+      <TestMethod codeBase="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.ProgramTest, TestProject1" name="MainTest" />
+    </UnitTest>
+    <UnitTest name="ProgramConstructorTest" storage="e:\大三上学期\软件工程\软件工程实验3\ml\demouser\testproject1\bin\debug\testproject1.dll" id="a3928d71-0d90-b11d-8ba6-9f61b459e3b5">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="93ca20d0-588c-4cef-9e2e-214457df879a" />
+      <TestMethod codeBase="E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.ProgramTest, TestProject1" name="ProgramConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="9a46fa9b-9a2e-3eff-02e4-ce3ff885083d" executionId="a516f16d-f1e2-4b1f-8964-3cfdd8c98c6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3928d71-0d90-b11d-8ba6-9f61b459e3b5" executionId="93ca20d0-588c-4cef-9e2e-214457df879a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="540f0c17-3ca7-83ce-ee69-c545db0ff423" executionId="097f7c73-3514-4985-8565-c5cf1e848118" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3393840d-e9a6-a6a7-c521-cccd30a65ca7" executionId="1439e4c8-e65b-459a-a7b5-0b817595ccea" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6cf9b48a-1c04-c64c-6be7-913e40ca4696" executionId="d626284c-ec1b-4b55-addd-d338408d246c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1180a974-3385-e89f-5fe7-fd3c01e6b092" executionId="abbcae93-d174-42bd-96eb-9b470ca99558" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="72644784-0e09-737d-b576-d143a9e7a0e8" executionId="238a619e-3cbf-4fef-bc63-db22aadf39f9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="a516f16d-f1e2-4b1f-8964-3cfdd8c98c6d" testId="9a46fa9b-9a2e-3eff-02e4-ce3ff885083d" testName="MainTest" computerName="DU6MRL69WMMNV6I" duration="00:00:00.0969136" startTime="2015-10-21T20:55:58.5713486+08:00" endTime="2015-10-21T20:55:59.0113492+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestProject1.ProgramTest.MainTest() 位置 E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\ProgramTest.cs:行号 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="93ca20d0-588c-4cef-9e2e-214457df879a" testId="a3928d71-0d90-b11d-8ba6-9f61b459e3b5" testName="ProgramConstructorTest" computerName="DU6MRL69WMMNV6I" duration="00:00:00.0148577" startTime="2015-10-21T20:55:59.0113492+08:00" endTime="2015-10-21T20:55:59.0513493+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestProject1.ProgramTest.ProgramConstructorTest() 位置 E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\ProgramTest.cs:行号 84
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="097f7c73-3514-4985-8565-c5cf1e848118" testId="540f0c17-3ca7-83ce-ee69-c545db0ff423" testName="UserConstructorTest" computerName="DU6MRL69WMMNV6I" duration="00:00:00.0013373" startTime="2015-10-21T20:55:59.0613493+08:00" endTime="2015-10-21T20:55:59.0713493+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="1439e4c8-e65b-459a-a7b5-0b817595ccea" testId="3393840d-e9a6-a6a7-c521-cccd30a65ca7" testName="UserConstructorEmptyTest" computerName="DU6MRL69WMMNV6I" duration="00:00:00.0003023" startTime="2015-10-21T20:55:59.0813493+08:00" endTime="2015-10-21T20:55:59.0813493+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d626284c-ec1b-4b55-addd-d338408d246c" testId="6cf9b48a-1c04-c64c-6be7-913e40ca4696" testName="ShowTest" computerName="DU6MRL69WMMNV6I" duration="00:00:00.0119694" startTime="2015-10-21T20:55:59.1113494+08:00" endTime="2015-10-21T20:55:59.1313494+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>123</StdOut>
+        <ErrorInfo>
+          <Message>Assert.IsTrue 失败。</Message>
+          <StackTrace>   在 TestProject1.UserTest.ShowTest() 位置 E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\UserTest.cs:行号 98
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="abbcae93-d174-42bd-96eb-9b470ca99558" testId="1180a974-3385-e89f-5fe7-fd3c01e6b092" testName="InterfaceTest" computerName="DU6MRL69WMMNV6I" duration="00:00:00.0115076" startTime="2015-10-21T20:55:59.1413494+08:00" endTime="2015-10-21T20:55:59.1713494+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsTrue 失败。</Message>
+          <StackTrace>   在 TestProject1.UserTest.InterfaceTest() 位置 E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\UserTest.cs:行号 110
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="238a619e-3cbf-4fef-bc63-db22aadf39f9" testId="72644784-0e09-737d-b576-d143a9e7a0e8" testName="BorderTest" computerName="DU6MRL69WMMNV6I" duration="00:00:00.0127656" startTime="2015-10-21T20:55:59.2013495+08:00" endTime="2015-10-21T20:55:59.2113495+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsTrue 失败。</Message>
+          <StackTrace>   在 TestProject1.UserTest.BorderTest() 位置 E:\大三上学期\软件工程\软件工程实验3\ml\DemoUser\TestProject1\UserTest.cs:行号 121
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

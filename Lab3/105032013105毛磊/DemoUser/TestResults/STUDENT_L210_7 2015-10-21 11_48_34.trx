@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="312f1da3-f312-4485-91b1-1d056819e47c" name="STUDENT@L210_7 2015-10-21 11:48:34" runUser="L210_7\STUDENT" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2006">
+  <TestRunConfiguration name="本地测试运行" id="4076fb99-a92d-4432-9d96-4d02bf257bdd">
+    <Description>这是本地测试运行的默认测试运行配置。</Description>
+    <Deployment runDeploymentRoot="E:\ml\DemoUser\TestResults\STUDENT_L210_7 2015-10-21 11_48_34">
+      <DeploymentItem filename="E:\ml\DemoUser\DemoUser\bin\Debug\DemoUser.exe" />
+    </Deployment>
+    <CodeCoverage>
+      <Regular>
+        <CodeCoverageItem binaryFile="DemoUser\bin\Debug\DemoUser.exe" pdbFile="DemoUser\bin\Debug\DemoUser.pdb" instrumentInPlace="true" />
+        <CodeCoverageItem binaryFile="TestProject1\bin\Debug\TestProject1.dll" pdbFile="TestProject1\bin\Debug\TestProject1.pdb" instrumentInPlace="true" />
+      </Regular>
+    </CodeCoverage>
+    <TestTypeSpecific>
+      <WebTestRunConfiguration testTypeId="4e7599fa-5ecb-43e9-a887-cd63cf72d207">
+        <Browser name="Internet Explorer 7.0">
+          <Headers>
+            <Header name="User-Agent" value="Mozilla/4.0 (compatible; MSIE 7.0; Windows NT 5.1)" />
+            <Header name="Accept" value="*/*" />
+            <Header name="Accept-Language" value="{{$IEAcceptLanguage}}" />
+            <Header name="Accept-Encoding" value="GZIP" />
+          </Headers>
+        </Browser>
+        <Network Name="LAN" BandwidthInKbps="0" />
+      </WebTestRunConfiguration>
+    </TestTypeSpecific>
+  </TestRunConfiguration>
+  <ResultSummary outcome="Failed">
+    <Counters total="6" executed="6" passed="2" error="0" failed="2" timeout="0" aborted="0" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <Times creation="2015-10-21T11:48:34.0156250+08:00" queuing="2015-10-21T11:48:35.4062500+08:00" start="2015-10-21T11:48:35.6406250+08:00" finish="2015-10-21T11:48:54.3125000+08:00" />
+  <TestDefinitions>
+    <ManualTest name="ManualTest1" storage="e:\ml\demouser\testproject1\manualtest1.mht" id="67a3308f-cd93-4d4d-b8bd-673a84ebca0e">
+      <Css projectStructure="" iteration="" />
+      <Description>待办任务：设置说明</Description>
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="10e92920-fe55-46b2-9062-41c370d070f3" />
+    </ManualTest>
+    <UnitTest name="UserConstructorEmptyTest" storage="e:\ml\demouser\testproject1\bin\debug\testproject1.dll" id="3393840d-e9a6-a6a7-c521-cccd30a65ca7">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="4f8fbc39-e652-4745-9217-f70731d17c3e" />
+      <TestMethod codeBase="E:\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="UserConstructorEmptyTest" />
+    </UnitTest>
+    <UnitTest name="UserConstructorTest" storage="e:\ml\demouser\testproject1\bin\debug\testproject1.dll" id="540f0c17-3ca7-83ce-ee69-c545db0ff423">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="2064358b-493d-46fe-9729-655aae94c807" />
+      <TestMethod codeBase="E:\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="UserConstructorTest" />
+    </UnitTest>
+    <UnitTest name="ShowTest" storage="e:\ml\demouser\testproject1\bin\debug\testproject1.dll" id="6cf9b48a-1c04-c64c-6be7-913e40ca4696">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="d6692697-9b80-4982-9d96-ec99208c03e9" />
+      <TestMethod codeBase="E:\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.UserTest, TestProject1" name="ShowTest" />
+    </UnitTest>
+    <UnitTest name="MainTest" storage="e:\ml\demouser\testproject1\bin\debug\testproject1.dll" id="9a46fa9b-9a2e-3eff-02e4-ce3ff885083d">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <DeploymentItems>
+        <DeploymentItem filename="DemoUser.exe" />
+      </DeploymentItems>
+      <Execution id="3e44819f-771f-40db-ae01-dfb4e8c859df" />
+      <TestMethod codeBase="E:\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.ProgramTest, TestProject1" name="MainTest" />
+    </UnitTest>
+    <UnitTest name="ProgramConstructorTest" storage="e:\ml\demouser\testproject1\bin\debug\testproject1.dll" id="a3928d71-0d90-b11d-8ba6-9f61b459e3b5">
+      <Css projectStructure="" iteration="" />
+      <Owners>
+        <Owner name="" />
+      </Owners>
+      <Execution id="4a41dacc-d248-499f-977b-cd80bfc80920" />
+      <TestMethod codeBase="E:\ml\DemoUser\TestProject1\bin\Debug\TestProject1.dll" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TestProject1.ProgramTest, TestProject1" name="ProgramConstructorTest" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="列表中未列出的结果" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="所有已加载的结果" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="67a3308f-cd93-4d4d-b8bd-673a84ebca0e" executionId="10e92920-fe55-46b2-9062-41c370d070f3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a46fa9b-9a2e-3eff-02e4-ce3ff885083d" executionId="3e44819f-771f-40db-ae01-dfb4e8c859df" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a3928d71-0d90-b11d-8ba6-9f61b459e3b5" executionId="4a41dacc-d248-499f-977b-cd80bfc80920" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="540f0c17-3ca7-83ce-ee69-c545db0ff423" executionId="2064358b-493d-46fe-9729-655aae94c807" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3393840d-e9a6-a6a7-c521-cccd30a65ca7" executionId="4f8fbc39-e652-4745-9217-f70731d17c3e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6cf9b48a-1c04-c64c-6be7-913e40ca4696" executionId="d6692697-9b80-4982-9d96-ec99208c03e9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <ManualTestResult executionId="10e92920-fe55-46b2-9062-41c370d070f3" testId="67a3308f-cd93-4d4d-b8bd-673a84ebca0e" testName="ManualTest1" computerName="L210_7" duration="00:00:17.7669920" startTime="2015-10-21T11:48:35.7187500+08:00" endTime="2015-10-21T11:48:53.4843750+08:00" testType="7a24f8ff-85da-d664-ef44-83ff4743dae6" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" testFile="E:\ml\DemoUser\TestResults\STUDENT_L210_7 2015-10-21 11_48_34\Out\manualtest1.mht">
+    </ManualTestResult>
+    <UnitTestResult executionId="3e44819f-771f-40db-ae01-dfb4e8c859df" testId="9a46fa9b-9a2e-3eff-02e4-ce3ff885083d" testName="MainTest" computerName="L210_7" duration="00:00:00.2487435" startTime="2015-10-21T11:48:53.5312500+08:00" endTime="2015-10-21T11:48:54.1406250+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。无法验证不返回值的方法。</Message>
+          <StackTrace>   在 TestProject1.ProgramTest.MainTest() 位置 E:\ml\DemoUser\TestProject1\ProgramTest.cs:行号 74
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4a41dacc-d248-499f-977b-cd80bfc80920" testId="a3928d71-0d90-b11d-8ba6-9f61b459e3b5" testName="ProgramConstructorTest" computerName="L210_7" duration="00:00:00.0077008" startTime="2015-10-21T11:48:54.1406250+08:00" endTime="2015-10-21T11:48:54.1562500+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive 失败。TODO: 实现用来验证目标的代码</Message>
+          <StackTrace>   在 TestProject1.ProgramTest.ProgramConstructorTest() 位置 E:\ml\DemoUser\TestProject1\ProgramTest.cs:行号 84
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="2064358b-493d-46fe-9729-655aae94c807" testId="540f0c17-3ca7-83ce-ee69-c545db0ff423" testName="UserConstructorTest" computerName="L210_7" duration="00:00:00.0011157" startTime="2015-10-21T11:48:54.1562500+08:00" endTime="2015-10-21T11:48:54.1718750+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4f8fbc39-e652-4745-9217-f70731d17c3e" testId="3393840d-e9a6-a6a7-c521-cccd30a65ca7" testName="UserConstructorEmptyTest" computerName="L210_7" duration="00:00:00.0001841" startTime="2015-10-21T11:48:54.1718750+08:00" endTime="2015-10-21T11:48:54.1718750+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d6692697-9b80-4982-9d96-ec99208c03e9" testId="6cf9b48a-1c04-c64c-6be7-913e40ca4696" testName="ShowTest" computerName="L210_7" duration="00:00:00.0070208" startTime="2015-10-21T11:48:54.1875000+08:00" endTime="2015-10-21T11:48:54.1875000+08:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d">
+      <Output>
+        <StdOut>123</StdOut>
+        <ErrorInfo>
+          <Message>Assert.IsTrue 失败。</Message>
+          <StackTrace>   在 TestProject1.UserTest.ShowTest() 位置 E:\ml\DemoUser\TestProject1\UserTest.cs:行号 98
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>
