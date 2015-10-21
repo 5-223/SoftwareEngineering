@@ -1,0 +1,9 @@
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\bin\Debug\GoodEmailTests.dll
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\bin\Debug\GoodEmailTests.pdb
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\bin\Debug\GoodEmail.exe
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\bin\Debug\GoodEmail.pdb
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\obj\Debug\GoodEmailTests.csprojResolveAssemblyReference.cache
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\obj\Debug\GoodEmailTests.dll
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmailTests\obj\Debug\GoodEmailTests.pdb

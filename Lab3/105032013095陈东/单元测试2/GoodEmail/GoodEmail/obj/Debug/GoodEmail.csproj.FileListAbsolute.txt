@@ -1,0 +1,6 @@
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmail\bin\Debug\GoodEmail.exe.config
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmail\bin\Debug\GoodEmail.exe
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmail\bin\Debug\GoodEmail.pdb
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmail\obj\Debug\GoodEmail.csprojResolveAssemblyReference.cache
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmail\obj\Debug\GoodEmail.exe
+F:\陈东\软件工程 单元测试\GoodEmail\GoodEmail\obj\Debug\GoodEmail.pdb
