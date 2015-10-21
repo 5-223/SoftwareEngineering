@@ -1,0 +1,53 @@
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\bin\Debug\MathsOperators.exe.config
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\bin\Debug\MathsOperators.exe
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\bin\Debug\MathsOperators.pdb
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MainWindow.baml
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MainWindow.g.cs
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\App.g.cs
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MathsOperators_MarkupCompile.cache
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MathsOperators.g.resources
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MathsOperators.Properties.Resources.resources
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MathsOperators.csproj.GenerateResource.Cache
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MathsOperators.exe
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MathsOperators.pdb
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators\MathsOperators\obj\Debug\MathsOperators.csprojResolveAssemblyReference.cache
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.exe.config
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.exe
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.pdb
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.exe
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.pdb
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MainWindow.baml
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MainWindow.g.cs
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\App.g.cs
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators_MarkupCompile.cache
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.g.resources
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.Properties.Resources.resources
+D:\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.csproj.GenerateResource.Cache
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.exe.config
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.exe
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.exe
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.pdb
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.csprojResolveAssemblyReference.cache
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MainWindow.baml
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MainWindow.g.cs
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\App.g.cs
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators_MarkupCompile.cache
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.g.resources
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.Properties.Resources.resources
+D:\C_Sharp_SBS\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.csproj.GenerateResource.Cache
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.exe.config
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.exe
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.pdb
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.exe
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\MathsOperators.pdb
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.csprojResolveAssemblyReference.cache
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MainWindow.baml
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MainWindow.g.cs
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\App.g.cs
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators_MarkupCompile.cache
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.g.resources
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.Properties.Resources.resources
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\obj\Debug\MathsOperators.csproj.GenerateResource.Cache
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\Calculator.dll
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\MathsOperators\bin\Debug\Calculator.pdb

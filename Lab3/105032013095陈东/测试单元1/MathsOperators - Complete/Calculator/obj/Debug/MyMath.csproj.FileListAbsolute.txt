@@ -1,0 +1,5 @@
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\Calculator\bin\Debug\Calculator.dll
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\Calculator\bin\Debug\Calculator.pdb
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\Calculator\obj\Debug\Calculator.dll
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\Calculator\obj\Debug\Calculator.pdb
+F:\陈东\csharp_sbs\Microsoft Press\Visual CSharp Step By Step\Chapter 2\Windows 7\MathsOperators - Complete\Calculator\obj\Debug\MyMath.csprojResolveAssemblyReference.cache
