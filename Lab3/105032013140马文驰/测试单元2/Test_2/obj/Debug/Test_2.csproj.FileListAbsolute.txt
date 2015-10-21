@@ -1,0 +1,6 @@
+F:\A大三上\软件工程\实验3\Test_2\Test_2\bin\Debug\Test_2.exe.config
+F:\A大三上\软件工程\实验3\Test_2\Test_2\obj\Debug\Test_2.csprojResolveAssemblyReference.cache
+F:\A大三上\软件工程\实验3\Test_2\Test_2\bin\Debug\Test_2.exe
+F:\A大三上\软件工程\实验3\Test_2\Test_2\bin\Debug\Test_2.pdb
+F:\A大三上\软件工程\实验3\Test_2\Test_2\obj\Debug\Test_2.exe
+F:\A大三上\软件工程\实验3\Test_2\Test_2\obj\Debug\Test_2.pdb

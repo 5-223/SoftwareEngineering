@@ -1,0 +1,9 @@
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\obj\Debug\Test_2Tests.csprojResolveAssemblyReference.cache
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\bin\Debug\Test_2Tests.dll
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\bin\Debug\Test_2Tests.pdb
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\bin\Debug\Test_2.exe
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\bin\Debug\Test_2.pdb
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\bin\Debug\zh-Hans\Microsoft.VisualStudio.QualityTools.UnitTestFramework.resources.dll
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\obj\Debug\Test_2Tests.dll
+F:\A大三上\软件工程\实验3\Test_2\Test_2Tests\obj\Debug\Test_2Tests.pdb
