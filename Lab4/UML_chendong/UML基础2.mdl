@@ -228,7 +228,760 @@
 			max_width  	21600
 			origin_x   	0
 			origin_y   	0
-			items      	(list diagram_item_list)))))
+			items      	(list diagram_item_list))))
+	    (object Class_Category "1生命的本质"
+		quid       	"563626F903C7"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class "植物"
+			quid       	"563627180308"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"56362D330131"
+				supplier   	"Logical View::1生命的本质::生物"
+				quidu      	"563629ED01B6"))
+			used_nodes 	(list uses_relationship_list
+			    (object Uses_Relationship
+				quid       	"56362A3002DE"
+				supplier   	"Logical View::1生命的本质::氧气"
+				quidu      	"563629A102ED")
+			    (object Uses_Relationship
+				quid       	"56362F9B034E"
+				supplier   	"Logical View::1生命的本质::光能"
+				quidu      	"563629A70331"))
+			operations 	(list Operations
+			    (object Operation "新陈代谢"
+				quid       	"5636297D0079"
+				parameters 	(list Parameters
+				    (object Parameter "water"
+					quid       	"5636298C02E0"
+					type       	"水"
+					quidu      	"5636299B0142")
+				    (object Parameter "solor"
+					quid       	"56362D14003B"
+					type       	"光能"
+					quidu      	"563629A70331")
+				    (object Parameter "O2"
+					quid       	"56362D1C0241"
+					type       	"氧气"
+					quidu      	"563629A102ED"))
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "光合作用"
+				quid       	"5636298201C8"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Class "水"
+			quid       	"5636299B0142")
+		    (object Class "氧气"
+			quid       	"563629A102ED")
+		    (object Class "光能"
+			quid       	"563629A70331"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"563629DA0203"
+				supplier   	"Logical View::1生命的本质::能量"
+				quidu      	"563629AC01C2")))
+		    (object Class "能量"
+			quid       	"563629AC01C2")
+		    (object Class "生物能"
+			quid       	"563629B20051"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"563629D70034"
+				supplier   	"Logical View::1生命的本质::能量"
+				quidu      	"563629AC01C2")))
+		    (object Class "化学能"
+			quid       	"563629B70172"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"563629D50102"
+				supplier   	"Logical View::1生命的本质::能量"
+				quidu      	"563629AC01C2")))
+		    (object Class "生物"
+			quid       	"563629ED01B6"
+			used_nodes 	(list uses_relationship_list
+			    (object Uses_Relationship
+				quid       	"56362A2C03DE"
+				supplier   	"Logical View::1生命的本质::水"
+				quidu      	"5636299B0142")
+			    (object Uses_Relationship
+				quid       	"56362F9402BE"
+				supplier   	"Logical View::1生命的本质::能量"
+				quidu      	"563629AC01C2"))
+			operations 	(list Operations
+			    (object Operation "新陈代谢"
+				quid       	"56362D360254"
+				parameters 	(list Parameters
+				    (object Parameter "water"
+					quid       	"56362D400273"
+					type       	"水"
+					quidu      	"5636299B0142")
+				    (object Parameter "energy"
+					quid       	"56362D4501CF"
+					type       	"能量"
+					quidu      	"563629AC01C2"))
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "世代交替"
+				quid       	"56362D5101CB"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "回应刺激"
+				quid       	"56362D5600D8"
+				parameters 	(list Parameters
+				    (object Parameter "simulate"
+					quid       	"56362D6901A4"
+					type       	"外界刺激"))
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Class "原核"
+			quid       	"563629F30296"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"56362A0D0307"
+				supplier   	"Logical View::1生命的本质::生物"
+				quidu      	"563629ED01B6")))
+		    (object Class "原生"
+			quid       	"563629F70129"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"56362A0F01EB"
+				supplier   	"Logical View::1生命的本质::生物"
+				quidu      	"563629ED01B6")))
+		    (object Class "真菌"
+			quid       	"563629FD0083"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"56362A110236"
+				supplier   	"Logical View::1生命的本质::生物"
+				quidu      	"563629ED01B6")))
+		    (object Class "动物"
+			quid       	"56362A040383"
+			superclasses 	(list inheritance_relationship_list
+			    (object Inheritance_Relationship
+				quid       	"56362F750189"
+				supplier   	"Logical View::1生命的本质::生物"
+				quidu      	"563629ED01B6"))
+			used_nodes 	(list uses_relationship_list
+			    (object Uses_Relationship
+				quid       	"56362A3E0047"
+				supplier   	"Logical View::1生命的本质::氧气"
+				quidu      	"563629A102ED")
+			    (object Uses_Relationship
+				quid       	"56362F8B002D"
+				supplier   	"Logical View::1生命的本质::生物能"
+				quidu      	"563629B20051"))
+			operations 	(list Operations
+			    (object Operation "新陈代谢"
+				quid       	"56362FC302BF"
+				parameters 	(list Parameters
+				    (object Parameter "water"
+					quid       	"56362FD10029"
+					type       	"水"
+					quidu      	"5636299B0142")
+				    (object Parameter "bioenergy"
+					quid       	"56362FD5034D"
+					type       	"生物能"
+					quidu      	"563629B20051")
+				    (object Parameter "O2"
+					quid       	"56362FDF00EC"
+					type       	"氧气"
+					quidu      	"563629A102ED"))
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "摄食"
+				quid       	"56362FE90272"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "消化"
+				quid       	"56362FEE017F"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "排泄"
+				quid       	"56362FF10284"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "细胞分裂"
+				quid       	"56362FF5004C"
+				concurrency 	"Sequential"
+				opExportControl 	"Protected"
+				uid        	0))))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "生命的本质"
+			quid       	"5636270B030E"
+			title      	"生命的本质"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ClassView "Class" "Logical View::1生命的本质::植物" @1
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				ShowOperationSignature 	TRUE
+				location   	(1347, 237)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@1
+				    location   	(831, 129)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	1032
+				    justify    	0
+				    label      	"植物")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563627180308"
+				compartment 	(object Compartment
+				    Parent_View 	@1
+				    location   	(831, 196)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	3
+				    max_width  	934)
+				width      	1050
+				height     	244
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::水" @2
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(586, 522)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@2
+				    location   	(490, 468)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"水")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5636299B0142"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::氧气" @3
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(355, 881)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@3
+				    location   	(259, 827)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"氧气")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629A102ED"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::光能" @4
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(2624, 556)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@4
+				    location   	(2528, 502)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"光能")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629A70331"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::能量" @5
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(2540, 1009)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@5
+				    location   	(2444, 955)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"能量")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629AC01C2"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::生物能" @6
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(2725, 1431)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@6
+				    location   	(2609, 1377)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	232
+				    justify    	0
+				    label      	"生物能")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629B20051"
+				width      	250
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::化学能" @7
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(2300, 1428)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@7
+				    location   	(2184, 1374)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	232
+				    justify    	0
+				    label      	"化学能")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629B70172"
+				width      	250
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @8
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"563629D50102"
+				client     	@7
+				supplier   	@5
+				line_style 	0)
+			    (object InheritView "" @9
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"563629D70034"
+				client     	@6
+				supplier   	@5
+				line_style 	0)
+			    (object InheritView "" @10
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"563629DA0203"
+				client     	@4
+				supplier   	@5
+				line_style 	0)
+			    (object ClassView "Class" "Logical View::1生命的本质::生物" @11
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				ShowOperationSignature 	TRUE
+				location   	(1364, 759)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@11
+				    location   	(946, 626)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	836
+				    justify    	0
+				    label      	"生物")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629ED01B6"
+				compartment 	(object Compartment
+				    Parent_View 	@11
+				    location   	(946, 693)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	4
+				    max_width  	753)
+				width      	854
+				height     	294
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::原核" @12
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(837, 1278)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@12
+				    location   	(741, 1224)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"原核")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629F30296"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::原生" @13
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1133, 1285)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@13
+				    location   	(1037, 1231)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"原生")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629F70129"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::真菌" @14
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1799, 1215)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@14
+				    location   	(1703, 1161)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	192
+				    justify    	0
+				    label      	"真菌")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563629FD0083"
+				width      	210
+				height     	136
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::1生命的本质::动物" @15
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				ShowOperationSignature 	TRUE
+				location   	(1511, 1722)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@15
+				    location   	(928, 1539)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	1166
+				    justify    	0
+				    label      	"动物")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"56362A040383"
+				compartment 	(object Compartment
+				    Parent_View 	@15
+				    location   	(928, 1606)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	6
+				    max_width  	1009)
+				width      	1184
+				height     	394
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @16
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362A0D0307"
+				client     	@12
+				supplier   	@11
+				line_style 	0)
+			    (object InheritView "" @17
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362A0F01EB"
+				client     	@13
+				supplier   	@11
+				line_style 	0)
+			    (object InheritView "" @18
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362A110236"
+				client     	@14
+				supplier   	@11
+				line_style 	0)
+			    (object UsesView "" @19
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362A2C03DE"
+				client     	@11
+				supplier   	@2
+				line_style 	0)
+			    (object InheritView "" @20
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362D330131"
+				client     	@1
+				supplier   	@11
+				line_style 	0)
+			    (object InheritView "" @21
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362F750189"
+				client     	@15
+				supplier   	@11
+				line_style 	0)
+			    (object UsesView "" @22
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362F9402BE"
+				client     	@11
+				supplier   	@5
+				line_style 	0)
+			    (object UsesView "" @23
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362A3002DE"
+				client     	@1
+				supplier   	@3
+				vertices   	(list Points
+				    (821, 239)
+				    (335, 241)
+				    (352, 812))
+				line_style 	0)
+			    (object UsesView "" @24
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362F9B034E"
+				client     	@1
+				supplier   	@4
+				vertices   	(list Points
+				    (1872, 224)
+				    (2629, 209)
+				    (2624, 487))
+				line_style 	0)
+			    (object UsesView "" @25
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362A3E0047"
+				client     	@15
+				supplier   	@3
+				vertices   	(list Points
+				    (918, 1702)
+				    (422, 1688)
+				    (360, 949))
+				line_style 	0)
+			    (object UsesView "" @26
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"56362F8B002D"
+				client     	@15
+				supplier   	@6
+				vertices   	(list Points
+				    (2103, 1733)
+				    (2731, 1747)
+				    (2725, 1499))
+				line_style 	0)
+			    (object NoteView @27
+				location   	(2050, 547)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@27
+				    location   	(1912, 487)
+				    fill_color 	13434879
+				    nlines     	2
+				    max_width  	240
+				    label      	"依赖关系")
+				line_color 	3342489
+				fill_color 	13434879
+				width      	300
+				height     	132)
+			    (object AttachView "" @28
+				stereotype 	TRUE
+				line_color 	3342489
+				client     	@27
+				supplier   	@22
+				line_style 	0))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"5635FCF403A3"
@@ -239,7 +992,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Logical View::宠物" @1
+		    (object ClassView "Class" "Logical View::宠物" @29
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -255,7 +1008,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@1
+			    Parent_View 	@29
 			    location   	(663, 14)
 			    fill_color 	13434879
 			    nlines     	1
@@ -267,7 +1020,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE0D014A"
 			compartment 	(object Compartment
-			    Parent_View 	@1
+			    Parent_View 	@29
 			    location   	(663, 81)
 			    font       	(object Font
 				size       	10
@@ -287,7 +1040,7 @@
 			height     	444
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::哈巴狗" @2
+		    (object ClassView "Class" "Logical View::哈巴狗" @30
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -303,7 +1056,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@2
+			    Parent_View 	@30
 			    location   	(70, 458)
 			    fill_color 	13434879
 			    nlines     	1
@@ -315,7 +1068,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE14015E"
 			compartment 	(object Compartment
-			    Parent_View 	@2
+			    Parent_View 	@30
 			    location   	(70, 525)
 			    font       	(object Font
 				size       	10
@@ -335,7 +1088,7 @@
 			height     	194
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::波斯猫" @3
+		    (object ClassView "Class" "Logical View::波斯猫" @31
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -351,7 +1104,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@3
+			    Parent_View 	@31
 			    location   	(657, 526)
 			    fill_color 	13434879
 			    nlines     	1
@@ -363,7 +1116,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE1803D7"
 			compartment 	(object Compartment
-			    Parent_View 	@3
+			    Parent_View 	@31
 			    location   	(657, 593)
 			    font       	(object Font
 				size       	10
@@ -383,7 +1136,7 @@
 			height     	194
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::画眉鸟" @4
+		    (object ClassView "Class" "Logical View::画眉鸟" @32
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -399,7 +1152,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@4
+			    Parent_View 	@32
 			    location   	(1313, 498)
 			    fill_color 	13434879
 			    nlines     	1
@@ -411,7 +1164,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE1D0017"
 			compartment 	(object Compartment
-			    Parent_View 	@4
+			    Parent_View 	@32
 			    location   	(1313, 565)
 			    font       	(object Font
 				size       	10
@@ -431,28 +1184,28 @@
 			height     	194
 			annotation 	8
 			autoResize 	TRUE)
-		    (object InheritView "" @5
+		    (object InheritView "" @33
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE37006A"
-			client     	@2
-			supplier   	@1
+			client     	@30
+			supplier   	@29
 			line_style 	0)
-		    (object InheritView "" @6
+		    (object InheritView "" @34
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE380355"
-			client     	@3
-			supplier   	@1
+			client     	@31
+			supplier   	@29
 			line_style 	0)
-		    (object InheritView "" @7
+		    (object InheritView "" @35
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE3A0332"
-			client     	@4
-			supplier   	@1
+			client     	@32
+			supplier   	@29
 			line_style 	0)
-		    (object ClassView "Class" "Logical View::老师" @8
+		    (object ClassView "Class" "Logical View::老师" @36
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -467,7 +1220,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@8
+			    Parent_View 	@36
 			    location   	(213, 827)
 			    fill_color 	13434879
 			    nlines     	1
@@ -482,7 +1235,7 @@
 			height     	136
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::学生" @9
+		    (object ClassView "Class" "Logical View::学生" @37
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -497,7 +1250,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@9
+			    Parent_View 	@37
 			    location   	(135, 1115)
 			    fill_color 	13434879
 			    nlines     	1
@@ -512,31 +1265,31 @@
 			height     	136
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$0" @10
+		    (object AssociationViewNew "$UNNAMED$0" @38
 			location   	(268, 1024)
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE3F01B4"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$1" @11
-				Parent_View 	@10
+			    (object RoleView "$UNNAMED$1" @39
+				Parent_View 	@38
 				location   	(-41, 143)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE4000C8"
-				client     	@10
-				supplier   	@9
+				client     	@38
+				supplier   	@37
 				line_style 	0)
-			    (object RoleView "$UNNAMED$2" @12
-				Parent_View 	@10
+			    (object RoleView "$UNNAMED$2" @40
+				Parent_View 	@38
 				location   	(-41, 143)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE4000CA"
-				client     	@10
-				supplier   	@8
+				client     	@38
+				supplier   	@36
 				line_style 	0)))
-		    (object ClassView "Class" "Logical View::老百姓" @13
+		    (object ClassView "Class" "Logical View::老百姓" @41
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -551,7 +1304,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@13
+			    Parent_View 	@41
 			    location   	(868, 799)
 			    fill_color 	13434879
 			    nlines     	1
@@ -566,7 +1319,7 @@
 			height     	136
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::领导人" @14
+		    (object ClassView "Class" "Logical View::领导人" @42
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -581,7 +1334,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@14
+			    Parent_View 	@42
 			    location   	(825, 1118)
 			    fill_color 	13434879
 			    nlines     	1
@@ -596,7 +1349,7 @@
 			height     	136
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$3" @15
+		    (object AssociationViewNew "$UNNAMED$3" @43
 			location   	(961, 1012)
 			font       	(object Font
 			    size       	12
@@ -611,23 +1364,23 @@
 			line_color 	3342489
 			quidu      	"5635FE4303A1"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$4" @16
-				Parent_View 	@15
+			    (object RoleView "$UNNAMED$4" @44
+				Parent_View 	@43
 				location   	(-23, 159)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE44012F"
-				client     	@15
-				supplier   	@14
+				client     	@43
+				supplier   	@42
 				line_style 	0)
-			    (object RoleView "$UNNAMED$5" @17
-				Parent_View 	@15
+			    (object RoleView "$UNNAMED$5" @45
+				Parent_View 	@43
 				location   	(-23, 159)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE440131"
-				client     	@15
-				supplier   	@13
+				client     	@43
+				supplier   	@41
 				line_style 	0)))))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5635FCF40154"
