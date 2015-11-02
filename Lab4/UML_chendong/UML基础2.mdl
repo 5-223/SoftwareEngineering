@@ -227,6 +227,820 @@
 				quid       	"5636363200CE"
 				supplier   	"Use Case View::1蚂蚁的地下世界::雄蚁"
 				quidu      	"563630D0006D"))))
+		statemachine 	(object State_Machine "State/Activity Model"
+		    quid       	"563752CD00A4"
+		    states     	(list States
+			(object State "$UNNAMED$24"
+			    quid       	"563752D80350"
+			    type       	"StartState")
+			(object State "$UNNAMED$25"
+			    quid       	"563752DB0001"
+			    type       	"EndState")
+			(object ActivityState "采食"
+			    quid       	"563752E00249")
+			(object ActivityState "沿途观察"
+			    quid       	"5637536D03C6")
+			(object ActivityState "发出警示"
+			    quid       	"56375396018F")
+			(object ActivityState "躲避危险"
+			    quid       	"5637539C02CD")
+			(object ActivityState "警卫"
+			    quid       	"563753CF01BF")
+			(object ActivityState "NewActivity"
+			    quid       	"563753D5010A")
+			(object ActivityState "战斗"
+			    quid       	"563753E000F8")
+			(object ActivityState "解除警报"
+			    quid       	"563753E502D3"))
+		    partitions 	(list Partitions
+			(object Partition "工蚁"
+			    quid       	"5637531903C0"
+			    persistence 	"Transient"
+			    creationObj 	FALSE
+			    multi      	FALSE)
+			(object Partition "兵蚁"
+			    quid       	"5637535102D9"
+			    persistence 	"Transient"
+			    creationObj 	FALSE
+			    multi      	FALSE))
+		    objects    	(list Objects)
+		    transitions 	(list transition_list
+			(object State_Transition
+			    quid       	"563752E90086"
+			    label      	""
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::采食"
+			    supplier_quidu 	"563752E00249"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::采食"
+			    client_quidu 	"563752E00249"
+			    Event      	(object Event "持续工作"
+				quid       	"563752E90087")
+			    sendEvent  	(object sendEvent
+				quid       	"563752E90089"))
+			(object State_Transition
+			    quid       	"563752F60013"
+			    label      	""
+			    supplier   	"$UNNAMED$25"
+			    supplier_quidu 	"563752DB0001"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::采食"
+			    client_quidu 	"563752E00249"
+			    Event      	(object Event "完成采食"
+				quid       	"563752F60014")
+			    sendEvent  	(object sendEvent
+				quid       	"563752F60016"))
+			(object State_Transition
+			    quid       	"5637530100BC"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::采食"
+			    supplier_quidu 	"563752E00249"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::"
+			    client_quidu 	"563752D80350"
+			    sendEvent  	(object sendEvent
+				quid       	"5637530100BF"))
+			(object State_Transition
+			    quid       	"563753A602BD"
+			    label      	""
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::沿途观察"
+			    supplier_quidu 	"5637536D03C6"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::采食"
+			    client_quidu 	"563752E00249"
+			    Event      	(object Event "边走边看"
+				quid       	"563753A602BE")
+			    sendEvent  	(object sendEvent
+				quid       	"563753A602C0"))
+			(object State_Transition
+			    quid       	"563753AB02E4"
+			    label      	""
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::采食"
+			    supplier_quidu 	"563752E00249"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::沿途观察"
+			    client_quidu 	"5637536D03C6"
+			    Event      	(object Event "平安无事"
+				quid       	"563753AB02E5")
+			    sendEvent  	(object sendEvent
+				quid       	"563753AB02E7"))
+			(object State_Transition
+			    quid       	"563753B602E1"
+			    label      	""
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::发出警示"
+			    supplier_quidu 	"56375396018F"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::沿途观察"
+			    client_quidu 	"5637536D03C6"
+			    Event      	(object Event "发现敌情"
+				quid       	"563753B602E2")
+			    sendEvent  	(object sendEvent
+				quid       	"563753B602E4"))
+			(object State_Transition
+			    quid       	"563753BE0045"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::躲避危险"
+			    supplier_quidu 	"5637539C02CD"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::发出警示"
+			    client_quidu 	"56375396018F"
+			    sendEvent  	(object sendEvent
+				quid       	"563753BE0048"))
+			(object State_Transition
+			    quid       	"563753C80276"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::沿途观察"
+			    supplier_quidu 	"5637536D03C6"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::躲避危险"
+			    client_quidu 	"5637539C02CD"
+			    sendEvent  	(object sendEvent
+				quid       	"563753C80279"))
+			(object State_Transition
+			    quid       	"563753F0014B"
+			    label      	""
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::警卫"
+			    supplier_quidu 	"563753CF01BF"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::警卫"
+			    client_quidu 	"563753CF01BF"
+			    Event      	(object Event "平安无事"
+				quid       	"563753F0014C")
+			    sendEvent  	(object sendEvent
+				quid       	"563753F0014E"))
+			(object State_Transition
+			    quid       	"563753F80025"
+			    label      	""
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::发出警示"
+			    supplier_quidu 	"56375396018F"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::警卫"
+			    client_quidu 	"563753CF01BF"
+			    Event      	(object Event "发现敌情"
+				quid       	"563753F80026")
+			    sendEvent  	(object sendEvent
+				quid       	"563753F80028"))
+			(object State_Transition
+			    quid       	"563753FF023B"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::警卫"
+			    supplier_quidu 	"563753CF01BF"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::"
+			    client_quidu 	"563752D80350"
+			    sendEvent  	(object sendEvent
+				quid       	"563753FF023E"))
+			(object State_Transition
+			    quid       	"5637540400DC"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::躲避危险"
+			    supplier_quidu 	"5637539C02CD"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::发出警示"
+			    client_quidu 	"56375396018F"
+			    sendEvent  	(object sendEvent
+				quid       	"5637540400DF"))
+			(object State_Transition
+			    quid       	"5637540800B6"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::战斗"
+			    supplier_quidu 	"563753E000F8"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::发出警示"
+			    client_quidu 	"56375396018F"
+			    sendEvent  	(object sendEvent
+				quid       	"5637540800B9"))
+			(object State_Transition
+			    quid       	"5637540A020A"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::解除警报"
+			    supplier_quidu 	"563753E502D3"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::战斗"
+			    client_quidu 	"563753E000F8"
+			    sendEvent  	(object sendEvent
+				quid       	"5637540A020D"))
+			(object State_Transition
+			    quid       	"56375411000C"
+			    supplier   	"Use Case View::1蚂蚁的地下世界::State/Activity Model::警卫"
+			    supplier_quidu 	"563753CF01BF"
+			    client     	"Use Case View::1蚂蚁的地下世界::State/Activity Model::解除警报"
+			    client_quidu 	"563753E502D3"
+			    sendEvent  	(object sendEvent
+				quid       	"56375411000F")))
+		    objectflows 	(list objectflow_list)
+		    statediagrams 	(list StateDiagrams
+			(object ActivityDiagram "蚂蚁的协作"
+			    quid       	"563752CD00A6"
+			    title      	"蚂蚁的协作"
+			    zoom       	100
+			    max_height 	28350
+			    max_width  	21600
+			    origin_x   	0
+			    origin_y   	219
+			    items      	(list diagram_item_list
+				(object Swimlane "工蚁" @1
+				    line_color 	3342489
+				    quidu      	"5637531903C0"
+				    width      	1298)
+				(object StateView "StartState" "$UNNAMED$24" @2
+				    Parent_View 	@1
+				    location   	(361, 247)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@2
+					location   	(403, 217)
+					nlines     	2
+					max_width  	600
+					label      	"")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    quidu      	"563752D80350"
+				    autoResize 	TRUE)
+				(object StateView "EndState" "$UNNAMED$25" @3
+				    Parent_View 	@1
+				    location   	(367, 1733)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@3
+					location   	(421, 1691)
+					nlines     	2
+					max_width  	600
+					label      	"")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    quidu      	"563752DB0001"
+				    autoResize 	TRUE)
+				(object ActivityStateView "采食" @4
+				    Parent_View 	@1
+				    location   	(365, 756)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@4
+					location   	(365, 759)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"采食")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	8421631
+				    quidu      	"563752E00249"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object SelfTransView "" @5
+				    location   	(365, 547)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @6
+					Parent_View 	@5
+					location   	(364, 488)
+					font       	(object Font
+					    size       	12
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"持续工作"
+					pctDist    	0.500000
+					height     	210
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563752E90086"
+				    client     	@4
+				    supplier   	@4
+				    line_style 	4)
+				(object TransView "" @7
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @8
+					Parent_View 	@7
+					location   	(410, 1253)
+					font       	(object Font
+					    size       	12
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"完成采食"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563752F60013"
+				    client     	@4
+				    supplier   	@3
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @9
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5637530100BC"
+				    client     	@2
+				    supplier   	@4
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object ActivityStateView "沿途观察" @10
+				    Parent_View 	@1
+				    location   	(894, 981)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@10
+					location   	(894, 984)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"沿途观察")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5637536D03C6"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object TransView "" @11
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @12
+					Parent_View 	@11
+					location   	(803, 712)
+					font       	(object Font
+					    size       	12
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"边走边看"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753A602BD"
+				    client     	@4
+				    supplier   	@10
+				    vertices   	(list Points
+					(539, 756)
+					(900, 756)
+					(895, 922))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @13
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @14
+					Parent_View 	@13
+					location   	(511, 981)
+					font       	(object Font
+					    size       	12
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"平安无事"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753AB02E4"
+				    client     	@10
+				    supplier   	@4
+				    vertices   	(list Points
+					(720, 974)
+					(560, 969)
+					(419, 814))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object ActivityStateView "发出警示" @15
+				    Parent_View 	@1
+				    location   	(887, 1303)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@15
+					location   	(887, 1306)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"发出警示")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"56375396018F"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object TransView "" @16
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @17
+					Parent_View 	@16
+					location   	(935, 1142)
+					font       	(object Font
+					    size       	12
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"发现敌情"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753B602E1"
+				    client     	@10
+				    supplier   	@15
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object ActivityStateView "躲避危险" @18
+				    Parent_View 	@1
+				    location   	(906, 1561)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@18
+					location   	(906, 1564)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"躲避危险")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	13434879
+				    quidu      	"5637539C02CD"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object TransView "" @19
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753BE0045"
+				    client     	@15
+				    supplier   	@18
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @20
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753C80276"
+				    client     	@18
+				    supplier   	@10
+				    vertices   	(list Points
+					(907, 1619)
+					(910, 1775)
+					(619, 1772)
+					(610, 1153)
+					(796, 1040))
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object Swimlane "兵蚁" @21
+				    location   	(1298, 0)
+				    line_color 	3342489
+				    quidu      	"5637535102D9"
+				    width      	1076)
+				(object ActivityStateView "警卫" @22
+				    Parent_View 	@21
+				    location   	(1844, 550)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@22
+					location   	(1844, 553)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"警卫")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	16744448
+				    quidu      	"563753CF01BF"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object ActivityStateView "发出警示" @23
+				    Parent_View 	@21
+				    location   	(1853, 959)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@23
+					location   	(1853, 962)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"发出警示")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	16744448
+				    quidu      	"56375396018F"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object ActivityStateView "战斗" @24
+				    Parent_View 	@21
+				    location   	(1853, 1342)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@24
+					location   	(1853, 1345)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"战斗")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	16744448
+				    quidu      	"563753E000F8"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object ActivityStateView "解除警报" @25
+				    Parent_View 	@21
+				    location   	(1857, 1656)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object ItemLabel
+					Parent_View 	@25
+					location   	(1857, 1659)
+					fill_color 	13434879
+					anchor_loc 	1
+					nlines     	2
+					max_width  	261
+					justify    	0
+					label      	"解除警报")
+				    icon_style 	"Icon"
+				    line_color 	3342489
+				    fill_color 	16744448
+				    quidu      	"563753E502D3"
+				    height     	118
+				    annotation 	1
+				    autoResize 	TRUE)
+				(object Swimlane "" @26
+				    location   	(2374, 0)
+				    line_color 	3342489
+				    width      	450)
+				(object SelfTransView "" @27
+				    location   	(1844, 341)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @28
+					Parent_View 	@27
+					location   	(1845, 281)
+					font       	(object Font
+					    size       	12
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"平安无事"
+					pctDist    	0.500000
+					height     	210
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753F0014B"
+				    client     	@22
+				    supplier   	@22
+				    line_style 	4)
+				(object TransView "" @29
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    label      	(object SegLabel @30
+					Parent_View 	@29
+					location   	(1893, 755)
+					font       	(object Font
+					    size       	12
+					    face       	"Arial"
+					    bold       	FALSE
+					    italics    	FALSE
+					    underline  	FALSE
+					    strike     	FALSE
+					    color      	0
+					    default_color 	TRUE)
+					anchor_loc 	1
+					nlines     	1
+					max_width  	450
+					justify    	0
+					label      	"发现敌情"
+					pctDist    	0.500000
+					height     	45
+					orientation 	0)
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753F80025"
+				    client     	@22
+				    supplier   	@23
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @31
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"563753FF023B"
+				    client     	@2
+				    supplier   	@22
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @32
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5637540400DC"
+				    client     	@23
+				    supplier   	@18
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @33
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5637540800B6"
+				    client     	@23
+				    supplier   	@24
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @34
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"5637540A020A"
+				    client     	@24
+				    supplier   	@25
+				    line_style 	0
+				    x_offset   	FALSE)
+				(object TransView "" @35
+				    stereotype 	TRUE
+				    line_color 	3342489
+				    quidu      	"56375411000C"
+				    client     	@25
+				    supplier   	@22
+				    vertices   	(list Points
+					(1857, 1715)
+					(1857, 1856)
+					(2195, 1856)
+					(2188, 544)
+					(2018, 546))
+				    line_style 	0
+				    x_offset   	FALSE)))))
 		logical_presentations 	(list unit_reference_list
 		    (object UseCaseDiagram "蚂蚁的地下世界"
 			quid       	"5636309E02D1"
@@ -237,7 +1051,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::蚂蚁" @1
+			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::蚂蚁" @36
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -252,7 +1066,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@1
+				    Parent_View 	@36
 				    location   	(226, 1159)
 				    anchor_loc 	1
 				    nlines     	2
@@ -265,7 +1079,7 @@
 				quidu      	"563630B900FF"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::搭巢" @2
+			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::搭巢" @37
 				location   	(1516, 94)
 				font       	(object Font
 				    size       	12
@@ -277,7 +1091,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@2
+				    Parent_View 	@37
 				    location   	(1516, 232)
 				    anchor_loc 	1
 				    nlines     	2
@@ -289,7 +1103,7 @@
 				fill_color 	13434879
 				quidu      	"563630E30369"
 				height     	118)
-			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::采食" @3
+			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::采食" @38
 				location   	(1537, 362)
 				font       	(object Font
 				    size       	12
@@ -301,7 +1115,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@3
+				    Parent_View 	@38
 				    location   	(1537, 500)
 				    anchor_loc 	1
 				    nlines     	2
@@ -313,7 +1127,31 @@
 				fill_color 	13434879
 				quidu      	"563635E10161"
 				height     	118)
-			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::工蚁" @4
+			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::育婴" @39
+				location   	(1534, 618)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@39
+				    location   	(1534, 756)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	630
+				    justify    	0
+				    label      	"育婴")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563635E7003E"
+				height     	118)
+			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::工蚁" @40
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -328,11 +1166,11 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@4
+				    Parent_View 	@40
 				    location   	(778, 313)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	328
+				    max_width  	325
 				    justify    	0
 				    label      	"工蚁")
 				icon       	"Actor"
@@ -341,14 +1179,14 @@
 				quidu      	"563630BE004C"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object InheritView "" @5
+			    (object InheritView "" @41
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"563630DB0386"
-				client     	@4
-				supplier   	@1
+				client     	@40
+				supplier   	@36
 				line_style 	0)
-			    (object AssociationViewNew "$UNNAMED$0" @6
+			    (object AssociationViewNew "$UNNAMED$0" @42
 				location   	(1119, 122)
 				font       	(object Font
 				    size       	12
@@ -363,25 +1201,25 @@
 				line_color 	3342489
 				quidu      	"5636361B02E5"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$1" @7
-					Parent_View 	@6
+				    (object RoleView "$UNNAMED$1" @43
+					Parent_View 	@42
 					location   	(341, -31)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636361C015E"
-					client     	@6
-					supplier   	@2
+					client     	@42
+					supplier   	@37
 					line_style 	0)
-				    (object RoleView "$UNNAMED$2" @8
-					Parent_View 	@6
+				    (object RoleView "$UNNAMED$2" @44
+					Parent_View 	@42
 					location   	(341, -31)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636361C0160"
-					client     	@6
-					supplier   	@4
+					client     	@42
+					supplier   	@40
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$3" @9
+			    (object AssociationViewNew "$UNNAMED$3" @45
 				location   	(1131, 248)
 				font       	(object Font
 				    size       	12
@@ -396,49 +1234,25 @@
 				line_color 	3342489
 				quidu      	"5636361E03CA"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$4" @10
-					Parent_View 	@9
+				    (object RoleView "$UNNAMED$4" @46
+					Parent_View 	@45
 					location   	(353, 95)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636361F034C"
-					client     	@9
-					supplier   	@3
+					client     	@45
+					supplier   	@38
 					line_style 	0)
-				    (object RoleView "$UNNAMED$5" @11
-					Parent_View 	@9
+				    (object RoleView "$UNNAMED$5" @47
+					Parent_View 	@45
 					location   	(353, 95)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636361F034E"
-					client     	@9
-					supplier   	@4
+					client     	@45
+					supplier   	@40
 					line_style 	0)))
-			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::育婴" @12
-				location   	(1534, 618)
-				font       	(object Font
-				    size       	12
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@12
-				    location   	(1534, 756)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	630
-				    justify    	0
-				    label      	"育婴")
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"563635E7003E"
-				height     	118)
-			    (object AssociationViewNew "$UNNAMED$6" @13
+			    (object AssociationViewNew "$UNNAMED$6" @48
 				location   	(1138, 373)
 				font       	(object Font
 				    size       	12
@@ -453,25 +1267,25 @@
 				line_color 	3342489
 				quidu      	"563636210211"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$7" @14
-					Parent_View 	@13
+				    (object RoleView "$UNNAMED$7" @49
+					Parent_View 	@48
 					location   	(360, 220)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362200E7"
-					client     	@13
-					supplier   	@12
+					client     	@48
+					supplier   	@39
 					line_style 	0)
-				    (object RoleView "$UNNAMED$8" @15
-					Parent_View 	@13
+				    (object RoleView "$UNNAMED$8" @50
+					Parent_View 	@48
 					location   	(360, 220)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362200F6"
-					client     	@13
-					supplier   	@4
+					client     	@48
+					supplier   	@40
 					line_style 	0)))
-			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::警卫" @16
+			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::警卫" @51
 				location   	(1556, 887)
 				font       	(object Font
 				    size       	12
@@ -483,7 +1297,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@16
+				    Parent_View 	@51
 				    location   	(1556, 1025)
 				    anchor_loc 	1
 				    nlines     	2
@@ -495,7 +1309,31 @@
 				fill_color 	13434879
 				quidu      	"563635EB01BE"
 				height     	118)
-			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::兵蚁" @17
+			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::战斗" @52
+				location   	(1600, 1137)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@52
+				    location   	(1600, 1275)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	630
+				    justify    	0
+				    label      	"战斗")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563635EF035D"
+				height     	118)
+			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::兵蚁" @53
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -510,11 +1348,11 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@17
+				    Parent_View 	@53
 				    location   	(792, 867)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	331
+				    max_width  	325
 				    justify    	0
 				    label      	"兵蚁")
 				icon       	"Actor"
@@ -523,14 +1361,14 @@
 				quidu      	"563630C20286"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object InheritView "" @18
+			    (object InheritView "" @54
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"563630DD0161"
-				client     	@17
-				supplier   	@1
+				client     	@53
+				supplier   	@36
 				line_style 	0)
-			    (object AssociationViewNew "$UNNAMED$9" @19
+			    (object AssociationViewNew "$UNNAMED$9" @55
 				location   	(1147, 788)
 				font       	(object Font
 				    size       	12
@@ -545,49 +1383,25 @@
 				line_color 	3342489
 				quidu      	"56363624020C"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$10" @20
-					Parent_View 	@19
+				    (object RoleView "$UNNAMED$10" @56
+					Parent_View 	@55
 					location   	(355, 81)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362500A3"
-					client     	@19
-					supplier   	@16
+					client     	@55
+					supplier   	@51
 					line_style 	0)
-				    (object RoleView "$UNNAMED$11" @21
-					Parent_View 	@19
+				    (object RoleView "$UNNAMED$11" @57
+					Parent_View 	@55
 					location   	(355, 81)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362500A5"
-					client     	@19
-					supplier   	@17
+					client     	@55
+					supplier   	@53
 					line_style 	0)))
-			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::战斗" @22
-				location   	(1600, 1137)
-				font       	(object Font
-				    size       	12
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@22
-				    location   	(1600, 1275)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	630
-				    justify    	0
-				    label      	"战斗")
-				icon_style 	"Icon"
-				line_color 	3342489
-				fill_color 	13434879
-				quidu      	"563635EF035D"
-				height     	118)
-			    (object AssociationViewNew "$UNNAMED$12" @23
+			    (object AssociationViewNew "$UNNAMED$12" @58
 				location   	(1169, 907)
 				font       	(object Font
 				    size       	12
@@ -602,25 +1416,25 @@
 				line_color 	3342489
 				quidu      	"5636362603CD"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$13" @24
-					Parent_View 	@23
+				    (object RoleView "$UNNAMED$13" @59
+					Parent_View 	@58
 					location   	(377, 200)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"563636280060"
-					client     	@23
-					supplier   	@22
+					client     	@58
+					supplier   	@52
 					line_style 	0)
-				    (object RoleView "$UNNAMED$14" @25
-					Parent_View 	@23
+				    (object RoleView "$UNNAMED$14" @60
+					Parent_View 	@58
 					location   	(377, 200)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"563636280062"
-					client     	@23
-					supplier   	@17
+					client     	@58
+					supplier   	@53
 					line_style 	0)))
-			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::产卵" @26
+			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::产卵" @61
 				location   	(1590, 1396)
 				font       	(object Font
 				    size       	12
@@ -632,7 +1446,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@26
+				    Parent_View 	@61
 				    location   	(1590, 1534)
 				    anchor_loc 	1
 				    nlines     	2
@@ -644,7 +1458,7 @@
 				fill_color 	13434879
 				quidu      	"563635F40354"
 				height     	118)
-			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::蚁后" @27
+			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::蚁后" @62
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -659,11 +1473,11 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@27
+				    Parent_View 	@62
 				    location   	(827, 1422)
 				    anchor_loc 	1
 				    nlines     	2
-				    max_width  	335
+				    max_width  	325
 				    justify    	0
 				    label      	"蚁后")
 				icon       	"Actor"
@@ -672,14 +1486,14 @@
 				quidu      	"563630CA021C"
 				annotation 	8
 				autoResize 	TRUE)
-			    (object InheritView "" @28
+			    (object InheritView "" @63
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"563630DF0093"
-				client     	@27
-				supplier   	@1
+				client     	@62
+				supplier   	@36
 				line_style 	0)
-			    (object AssociationViewNew "$UNNAMED$15" @29
+			    (object AssociationViewNew "$UNNAMED$15" @64
 				location   	(1182, 1321)
 				font       	(object Font
 				    size       	12
@@ -694,60 +1508,25 @@
 				line_color 	3342489
 				quidu      	"5636362903C8"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$16" @30
-					Parent_View 	@29
+				    (object RoleView "$UNNAMED$16" @65
+					Parent_View 	@64
 					location   	(355, 59)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362C02F8"
-					client     	@29
-					supplier   	@26
+					client     	@64
+					supplier   	@61
 					line_style 	0)
-				    (object RoleView "$UNNAMED$17" @31
-					Parent_View 	@29
+				    (object RoleView "$UNNAMED$17" @66
+					Parent_View 	@64
 					location   	(355, 59)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362C02FA"
-					client     	@29
-					supplier   	@27
+					client     	@64
+					supplier   	@62
 					line_style 	0)))
-			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::雄蚁" @32
-				ShowCompartmentStereotypes 	TRUE
-				IncludeAttribute 	TRUE
-				IncludeOperation 	TRUE
-				location   	(827, 1630)
-				font       	(object Font
-				    size       	12
-				    face       	"Arial"
-				    bold       	FALSE
-				    italics    	FALSE
-				    underline  	FALSE
-				    strike     	FALSE
-				    color      	0
-				    default_color 	TRUE)
-				label      	(object ItemLabel
-				    Parent_View 	@32
-				    location   	(827, 1790)
-				    anchor_loc 	1
-				    nlines     	2
-				    max_width  	339
-				    justify    	0
-				    label      	"雄蚁")
-				icon       	"Actor"
-				icon_style 	"Icon"
-				line_color 	3342489
-				quidu      	"563630D0006D"
-				annotation 	8
-				autoResize 	TRUE)
-			    (object InheritView "" @33
-				stereotype 	TRUE
-				line_color 	3342489
-				quidu      	"563630E10042"
-				client     	@32
-				supplier   	@1
-				line_style 	0)
-			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::交配" @34
+			    (object UseCaseView "Use Case View::1蚂蚁的地下世界::交配" @67
 				location   	(1606, 1684)
 				font       	(object Font
 				    size       	12
@@ -759,7 +1538,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@34
+				    Parent_View 	@67
 				    location   	(1606, 1822)
 				    anchor_loc 	1
 				    nlines     	2
@@ -771,7 +1550,7 @@
 				fill_color 	13434879
 				quidu      	"563635FB03A7"
 				height     	118)
-			    (object AssociationViewNew "$UNNAMED$18" @35
+			    (object AssociationViewNew "$UNNAMED$18" @68
 				location   	(1192, 1458)
 				font       	(object Font
 				    size       	12
@@ -786,25 +1565,60 @@
 				line_color 	3342489
 				quidu      	"5636362F00F0"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$19" @36
-					Parent_View 	@35
+				    (object RoleView "$UNNAMED$19" @69
+					Parent_View 	@68
 					location   	(365, 196)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362F0303"
-					client     	@35
-					supplier   	@34
+					client     	@68
+					supplier   	@67
 					line_style 	0)
-				    (object RoleView "$UNNAMED$20" @37
-					Parent_View 	@35
+				    (object RoleView "$UNNAMED$20" @70
+					Parent_View 	@68
 					location   	(365, 196)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636362F0305"
-					client     	@35
-					supplier   	@27
+					client     	@68
+					supplier   	@62
 					line_style 	0)))
-			    (object AssociationViewNew "$UNNAMED$21" @38
+			    (object ClassView "Class" "Use Case View::1蚂蚁的地下世界::雄蚁" @71
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(827, 1630)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@71
+				    location   	(827, 1790)
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	325
+				    justify    	0
+				    label      	"雄蚁")
+				icon       	"Actor"
+				icon_style 	"Icon"
+				line_color 	3342489
+				quidu      	"563630D0006D"
+				annotation 	8
+				autoResize 	TRUE)
+			    (object InheritView "" @72
+				stereotype 	TRUE
+				line_color 	3342489
+				quidu      	"563630E10042"
+				client     	@71
+				supplier   	@36
+				line_style 	0)
+			    (object AssociationViewNew "$UNNAMED$21" @73
 				location   	(1189, 1652)
 				font       	(object Font
 				    size       	12
@@ -819,23 +1633,23 @@
 				line_color 	3342489
 				quidu      	"5636363101A8"
 				roleview_list 	(list RoleViews
-				    (object RoleView "$UNNAMED$22" @39
-					Parent_View 	@38
+				    (object RoleView "$UNNAMED$22" @74
+					Parent_View 	@73
 					location   	(362, 22)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636363200CC"
-					client     	@38
-					supplier   	@34
+					client     	@73
+					supplier   	@67
 					line_style 	0)
-				    (object RoleView "$UNNAMED$23" @40
-					Parent_View 	@38
+				    (object RoleView "$UNNAMED$23" @75
+					Parent_View 	@73
 					location   	(362, 22)
 					stereotype 	TRUE
 					line_color 	3342489
 					quidu      	"5636363200CE"
-					client     	@38
-					supplier   	@32
+					client     	@73
+					supplier   	@71
 					line_style 	0))))))))
 	logical_presentations 	(list unit_reference_list
 	    (object UseCaseDiagram "Main"
@@ -949,28 +1763,28 @@
 		quid       	"5635FE2D0173")
 	    (object Class "领导人"
 		quid       	"5635FE31010F")
-	    (object Association "$UNNAMED$24"
+	    (object Association "$UNNAMED$26"
 		quid       	"5635FE3F01B4"
 		roles      	(list role_list
-		    (object Role "$UNNAMED$25"
+		    (object Role "$UNNAMED$27"
 			quid       	"5635FE4000C8"
 			supplier   	"Logical View::学生"
 			quidu      	"5635FE2D0173"
 			is_navigable 	TRUE)
-		    (object Role "$UNNAMED$26"
+		    (object Role "$UNNAMED$28"
 			quid       	"5635FE4000CA"
 			supplier   	"Logical View::老师"
 			quidu      	"5635FE22031B"
 			is_navigable 	TRUE)))
-	    (object Association "$UNNAMED$27"
+	    (object Association "$UNNAMED$29"
 		quid       	"5635FE4303A1"
 		roles      	(list role_list
-		    (object Role "$UNNAMED$28"
+		    (object Role "$UNNAMED$30"
 			quid       	"5635FE44012F"
 			supplier   	"Logical View::领导人"
 			quidu      	"5635FE31010F"
 			is_navigable 	TRUE)
-		    (object Role "$UNNAMED$29"
+		    (object Role "$UNNAMED$31"
 			quid       	"5635FE440131"
 			supplier   	"Logical View::老百姓"
 			quidu      	"5635FE2700F1")))
@@ -1185,7 +1999,7 @@
 			origin_x   	0
 			origin_y   	0
 			items      	(list diagram_item_list
-			    (object ClassView "Class" "Logical View::1生命的本质::植物" @41
+			    (object ClassView "Class" "Logical View::1生命的本质::植物" @76
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1201,7 +2015,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@41
+				    Parent_View 	@76
 				    location   	(831, 129)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1216,7 +2030,7 @@
 				height     	244
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::水" @42
+			    (object ClassView "Class" "Logical View::1生命的本质::水" @77
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1231,7 +2045,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@42
+				    Parent_View 	@77
 				    location   	(490, 468)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1246,7 +2060,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::氧气" @43
+			    (object ClassView "Class" "Logical View::1生命的本质::氧气" @78
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1261,7 +2075,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@43
+				    Parent_View 	@78
 				    location   	(259, 827)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1276,7 +2090,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::光能" @44
+			    (object ClassView "Class" "Logical View::1生命的本质::光能" @79
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1291,7 +2105,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@44
+				    Parent_View 	@79
 				    location   	(2528, 502)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1306,7 +2120,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::能量" @45
+			    (object ClassView "Class" "Logical View::1生命的本质::能量" @80
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1321,7 +2135,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@45
+				    Parent_View 	@80
 				    location   	(2444, 955)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1336,7 +2150,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::生物能" @46
+			    (object ClassView "Class" "Logical View::1生命的本质::生物能" @81
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1351,7 +2165,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@46
+				    Parent_View 	@81
 				    location   	(2609, 1377)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1366,7 +2180,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::化学能" @47
+			    (object ClassView "Class" "Logical View::1生命的本质::化学能" @82
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1381,7 +2195,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@47
+				    Parent_View 	@82
 				    location   	(2184, 1374)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1396,28 +2210,28 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object InheritView "" @48
+			    (object InheritView "" @83
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"563629D50102"
-				client     	@47
-				supplier   	@45
+				client     	@82
+				supplier   	@80
 				line_style 	0)
-			    (object InheritView "" @49
+			    (object InheritView "" @84
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"563629D70034"
-				client     	@46
-				supplier   	@45
+				client     	@81
+				supplier   	@80
 				line_style 	0)
-			    (object InheritView "" @50
+			    (object InheritView "" @85
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"563629DA0203"
-				client     	@44
-				supplier   	@45
+				client     	@79
+				supplier   	@80
 				line_style 	0)
-			    (object ClassView "Class" "Logical View::1生命的本质::生物" @51
+			    (object ClassView "Class" "Logical View::1生命的本质::生物" @86
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1433,7 +2247,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@51
+				    Parent_View 	@86
 				    location   	(946, 626)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1448,7 +2262,7 @@
 				height     	294
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::原核" @52
+			    (object ClassView "Class" "Logical View::1生命的本质::原核" @87
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1463,7 +2277,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@52
+				    Parent_View 	@87
 				    location   	(741, 1224)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1478,7 +2292,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::原生" @53
+			    (object ClassView "Class" "Logical View::1生命的本质::原生" @88
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1493,7 +2307,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@53
+				    Parent_View 	@88
 				    location   	(1037, 1231)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1508,7 +2322,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::真菌" @54
+			    (object ClassView "Class" "Logical View::1生命的本质::真菌" @89
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1523,7 +2337,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@54
+				    Parent_View 	@89
 				    location   	(1703, 1161)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1538,7 +2352,7 @@
 				height     	136
 				annotation 	8
 				autoResize 	TRUE)
-			    (object ClassView "Class" "Logical View::1生命的本质::动物" @55
+			    (object ClassView "Class" "Logical View::1生命的本质::动物" @90
 				ShowCompartmentStereotypes 	TRUE
 				IncludeAttribute 	TRUE
 				IncludeOperation 	TRUE
@@ -1554,7 +2368,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@55
+				    Parent_View 	@90
 				    location   	(928, 1539)
 				    fill_color 	13434879
 				    nlines     	1
@@ -1569,100 +2383,100 @@
 				height     	394
 				annotation 	8
 				autoResize 	TRUE)
-			    (object InheritView "" @56
+			    (object InheritView "" @91
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362A0D0307"
-				client     	@52
-				supplier   	@51
+				client     	@87
+				supplier   	@86
 				line_style 	0)
-			    (object InheritView "" @57
+			    (object InheritView "" @92
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362A0F01EB"
-				client     	@53
-				supplier   	@51
+				client     	@88
+				supplier   	@86
 				line_style 	0)
-			    (object InheritView "" @58
+			    (object InheritView "" @93
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362A110236"
-				client     	@54
-				supplier   	@51
+				client     	@89
+				supplier   	@86
 				line_style 	0)
-			    (object UsesView "" @59
+			    (object UsesView "" @94
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362A2C03DE"
-				client     	@51
-				supplier   	@42
+				client     	@86
+				supplier   	@77
 				line_style 	0)
-			    (object InheritView "" @60
+			    (object InheritView "" @95
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362D330131"
-				client     	@41
-				supplier   	@51
+				client     	@76
+				supplier   	@86
 				line_style 	0)
-			    (object InheritView "" @61
+			    (object InheritView "" @96
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362F750189"
-				client     	@55
-				supplier   	@51
+				client     	@90
+				supplier   	@86
 				line_style 	0)
-			    (object UsesView "" @62
+			    (object UsesView "" @97
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362F9402BE"
-				client     	@51
-				supplier   	@45
+				client     	@86
+				supplier   	@80
 				line_style 	0)
-			    (object UsesView "" @63
+			    (object UsesView "" @98
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362A3002DE"
-				client     	@41
-				supplier   	@43
+				client     	@76
+				supplier   	@78
 				vertices   	(list Points
 				    (821, 239)
 				    (335, 241)
 				    (352, 812))
 				line_style 	0)
-			    (object UsesView "" @64
+			    (object UsesView "" @99
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362F9B034E"
-				client     	@41
-				supplier   	@44
+				client     	@76
+				supplier   	@79
 				vertices   	(list Points
 				    (1872, 224)
 				    (2629, 209)
 				    (2624, 487))
 				line_style 	0)
-			    (object UsesView "" @65
+			    (object UsesView "" @100
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362A3E0047"
-				client     	@55
-				supplier   	@43
+				client     	@90
+				supplier   	@78
 				vertices   	(list Points
 				    (918, 1702)
 				    (422, 1688)
 				    (360, 949))
 				line_style 	0)
-			    (object UsesView "" @66
+			    (object UsesView "" @101
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"56362F8B002D"
-				client     	@55
-				supplier   	@46
+				client     	@90
+				supplier   	@81
 				vertices   	(list Points
 				    (2103, 1733)
 				    (2731, 1747)
 				    (2725, 1499))
 				line_style 	0)
-			    (object NoteView @67
+			    (object NoteView @102
 				location   	(2050, 547)
 				font       	(object Font
 				    size       	12
@@ -1674,7 +2488,7 @@
 				    color      	0
 				    default_color 	TRUE)
 				label      	(object ItemLabel
-				    Parent_View 	@67
+				    Parent_View 	@102
 				    location   	(1912, 487)
 				    fill_color 	13434879
 				    nlines     	2
@@ -1684,12 +2498,997 @@
 				fill_color 	13434879
 				width      	300
 				height     	132)
-			    (object AttachView "" @68
+			    (object AttachView "" @103
 				stereotype 	TRUE
 				line_color 	3342489
-				client     	@67
-				supplier   	@62
-				line_style 	0))))))
+				client     	@102
+				supplier   	@97
+				line_style 	0)))))
+	    (object Class_Category "3狼群的战术"
+		quid       	"5637544B021D"
+		exportControl 	"Public"
+		logical_models 	(list unit_reference_list
+		    (object Class "头狼"
+			quid       	"56375464032C"
+			operations 	(list Operations
+			    (object Operation "下令进食"
+				quid       	"5637548203C6"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Class "斥候"
+			quid       	"563754690140"
+			operations 	(list Operations
+			    (object Operation "侦查"
+				quid       	"5637548E00D5"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Class "侧后"
+			quid       	"5637546D006F"
+			operations 	(list Operations
+			    (object Operation "包抄"
+				quid       	"5637549902C6"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Class "游击"
+			quid       	"563754700200"
+			operations 	(list Operations
+			    (object Operation "驱赶"
+				quid       	"563754A300A4"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Class "大队"
+			quid       	"5637547802FC"
+			operations 	(list Operations
+			    (object Operation "进食"
+				quid       	"563754AB020D"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)
+			    (object Operation "埋伏"
+				quid       	"563754AF00FD"
+				concurrency 	"Sequential"
+				opExportControl 	"Public"
+				uid        	0)))
+		    (object Mechanism @104
+			logical_models 	(list unit_reference_list
+			    (object Object "$UNNAMED$32"
+				quid       	"563755210208"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"563755AC0200"
+					supplier   	"$UNNAMED$33"
+					quidu      	"5637553501D8"
+					messages   	(list Messages
+					    (object Message "侦查( )"
+						quid       	"563756340038"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	"1"
+						ordinal    	0
+						quidu      	"5637548E00D5"
+						creation   	FALSE)))
+				    (object Link
+					quid       	"5637569802A9"
+					supplier   	"$UNNAMED$34"
+					quidu      	"563755400178"
+					messages   	(list Messages
+					    (object Message "埋伏( )"
+						quid       	"5637569802AA"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	"2"
+						ordinal    	2
+						quidu      	"563754AF00FD"
+						creation   	FALSE)
+					    (object Message "聚歼"
+						quid       	"563756E800A0"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	"5"
+						ordinal    	5
+						quidu      	"000000000000"
+						creation   	FALSE)))
+				    (object Link
+					quid       	"563756D201AE"
+					supplier   	"$UNNAMED$35"
+					quidu      	"5637554700D0"
+					messages   	(list Messages
+					    (object Message "驱赶( )"
+						quid       	"563756D201AF"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	"3"
+						ordinal    	3
+						quidu      	"563754A300A4"
+						creation   	FALSE)))
+				    (object Link
+					quid       	"563756DD019C"
+					supplier   	"$UNNAMED$36"
+					quidu      	"5637554D024D"
+					messages   	(list Messages
+					    (object Message "包抄( )"
+						quid       	"563756DD019D"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	"4"
+						ordinal    	4
+						quidu      	"5637549902C6"
+						creation   	FALSE)))
+				    (object Link
+					quid       	"5637570802FB"
+					supplier   	"$UNNAMED$32"
+					quidu      	"563755210208"
+					messages   	(list Messages
+					    (object Message "下令进食( )"
+						quid       	"5637570802FC"
+						frequency  	"Aperiodic"
+						synchronization 	"Simple"
+						dir        	"FromClientToSupplier"
+						sequence   	"6"
+						ordinal    	6
+						quidu      	"5637548203C6"
+						creation   	FALSE))))
+				class      	"Logical View::3狼群的战术::头狼"
+				quidu      	"56375464032C"
+				persistence 	"Transient"
+				creationObj 	TRUE
+				multi      	FALSE)
+			    (object Object "$UNNAMED$33"
+				quid       	"5637553501D8"
+				collaborators 	(list link_list
+				    (object Link
+					quid       	"56375629029A"
+					supplier   	"$UNNAMED$32"
+					quidu      	"563755210208"
+					messages   	(list Messages
+					    (object Message "发现牛群"
+						quid       	"5637566802F7"
+						frequency  	"Aperiodic"
+						synchronization 	"Return"
+						dir        	"FromClientToSupplier"
+						sequence   	"1.1"
+						ordinal    	1
+						quidu      	"000000000000"
+						creation   	FALSE))))
+				class      	"Logical View::3狼群的战术::斥候"
+				quidu      	"563754690140"
+				persistence 	"Transient"
+				creationObj 	TRUE
+				multi      	FALSE)
+			    (object Object "$UNNAMED$34"
+				quid       	"563755400178"
+				class      	"Logical View::3狼群的战术::大队"
+				quidu      	"5637547802FC"
+				persistence 	"Transient"
+				creationObj 	TRUE
+				multi      	FALSE)
+			    (object Object "$UNNAMED$35"
+				quid       	"5637554700D0"
+				class      	"Logical View::3狼群的战术::游击"
+				quidu      	"563754700200"
+				persistence 	"Transient"
+				creationObj 	TRUE
+				multi      	FALSE)
+			    (object Object "$UNNAMED$36"
+				quid       	"5637554D024D"
+				class      	"Logical View::3狼群的战术::侧后"
+				quidu      	"5637546D006F"
+				persistence 	"Transient"
+				creationObj 	TRUE
+				multi      	FALSE))))
+		logical_presentations 	(list unit_reference_list
+		    (object ClassDiagram "狼群的战术"
+			quid       	"5637545A00EC"
+			title      	"狼群的战术"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object ClassView "Class" "Logical View::3狼群的战术::头狼" @105
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1094, 331)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@105
+				    location   	(945, 248)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	298
+				    justify    	0
+				    label      	"头狼")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"56375464032C"
+				compartment 	(object Compartment
+				    Parent_View 	@105
+				    location   	(945, 315)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	2
+				    max_width  	250)
+				width      	316
+				height     	194
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::3狼群的战术::斥候" @106
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(379, 700)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@106
+				    location   	(280, 616)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	198
+				    justify    	0
+				    label      	"斥候")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563754690140"
+				compartment 	(object Compartment
+				    Parent_View 	@106
+				    location   	(280, 683)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	2
+				    max_width  	163)
+				width      	216
+				height     	196
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::3狼群的战术::侧后" @107
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(805, 691)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@107
+				    location   	(706, 608)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	198
+				    justify    	0
+				    label      	"侧后")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5637546D006F"
+				compartment 	(object Compartment
+				    Parent_View 	@107
+				    location   	(706, 675)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	2
+				    max_width  	163)
+				width      	216
+				height     	194
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::3狼群的战术::游击" @108
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1232, 697)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@108
+				    location   	(1133, 614)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	198
+				    justify    	0
+				    label      	"游击")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563754700200"
+				compartment 	(object Compartment
+				    Parent_View 	@108
+				    location   	(1133, 681)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	2
+				    max_width  	163)
+				width      	216
+				height     	194
+				annotation 	8
+				autoResize 	TRUE)
+			    (object ClassView "Class" "Logical View::3狼群的战术::大队" @109
+				ShowCompartmentStereotypes 	TRUE
+				IncludeAttribute 	TRUE
+				IncludeOperation 	TRUE
+				location   	(1676, 694)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@109
+				    location   	(1577, 586)
+				    fill_color 	13434879
+				    nlines     	1
+				    max_width  	198
+				    justify    	0
+				    label      	"大队")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5637547802FC"
+				compartment 	(object Compartment
+				    Parent_View 	@109
+				    location   	(1577, 653)
+				    font       	(object Font
+					size       	10
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    icon_style 	"Icon"
+				    fill_color 	13434879
+				    anchor     	2
+				    nlines     	3
+				    max_width  	163)
+				width      	216
+				height     	244
+				annotation 	8
+				autoResize 	TRUE)))
+		    (object InteractionDiagram "狼群的战术"
+			mechanism_ref 	@104
+			quid       	"563754C60107"
+			title      	"狼群的战术"
+			zoom       	100
+			max_height 	28350
+			max_width  	21600
+			origin_x   	0
+			origin_y   	0
+			items      	(list diagram_item_list
+			    (object InterObjView "$UNNAMED$32" @110
+				location   	(409, 301)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@110
+				    location   	(409, 301)
+				    fill_color 	13434879
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	282
+				    justify    	0
+				    label      	"")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563755210208"
+				width      	300
+				height     	1235
+				icon_height 	0
+				icon_width 	0
+				icon_y_offset 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @111
+				    location   	(409, 387)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	266
+				    y_coord    	176
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @112
+				    location   	(409, 553)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	1
+				    y_coord    	-89
+				    Nested     	TRUE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @113
+				    location   	(409, 730)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @114
+				    location   	(409, 872)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @115
+				    location   	(409, 1031)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @116
+				    location   	(409, 1178)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @117
+				    location   	(409, 1331)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @118
+				    location   	(409, 1356)
+				    line_color 	3342489
+				    InterObjView 	@110
+				    height     	90
+				    y_coord    	0
+				    Nested     	TRUE))
+			    (object InterObjView "$UNNAMED$33" @119
+				location   	(832, 294)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@119
+				    location   	(832, 294)
+				    fill_color 	13434879
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	282
+				    justify    	0
+				    label      	"")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5637553501D8"
+				width      	300
+				height     	1242
+				icon_height 	0
+				icon_width 	0
+				icon_y_offset 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @120
+				    location   	(832, 380)
+				    line_color 	3342489
+				    InterObjView 	@119
+				    height     	128
+				    y_coord    	38
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @121
+				    location   	(832, 448)
+				    line_color 	3342489
+				    InterObjView 	@119
+				    height     	196
+				    y_coord    	106
+				    Nested     	TRUE))
+			    (object InterObjView "$UNNAMED$34" @122
+				location   	(1222, 293)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@122
+				    location   	(1222, 293)
+				    fill_color 	13434879
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	282
+				    justify    	0
+				    label      	"")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"563755400178"
+				width      	300
+				height     	1243
+				icon_height 	0
+				icon_width 	0
+				icon_y_offset 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @123
+				    location   	(1222, 379)
+				    line_color 	3342489
+				    InterObjView 	@122
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @124
+				    location   	(1222, 730)
+				    line_color 	3342489
+				    InterObjView 	@122
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @125
+				    location   	(1222, 1178)
+				    line_color 	3342489
+				    InterObjView 	@122
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$35" @126
+				location   	(1594, 293)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@126
+				    location   	(1594, 293)
+				    fill_color 	13434879
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	282
+				    justify    	0
+				    label      	"")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5637554700D0"
+				width      	300
+				height     	1243
+				icon_height 	0
+				icon_width 	0
+				icon_y_offset 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @127
+				    location   	(1594, 379)
+				    line_color 	3342489
+				    InterObjView 	@126
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @128
+				    location   	(1594, 872)
+				    line_color 	3342489
+				    InterObjView 	@126
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterObjView "$UNNAMED$36" @129
+				location   	(1974, 290)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	TRUE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object ItemLabel
+				    Parent_View 	@129
+				    location   	(1974, 290)
+				    fill_color 	13434879
+				    anchor_loc 	1
+				    nlines     	2
+				    max_width  	282
+				    justify    	0
+				    label      	"")
+				icon_style 	"Icon"
+				line_color 	3342489
+				fill_color 	13434879
+				quidu      	"5637554D024D"
+				width      	300
+				height     	1246
+				icon_height 	0
+				icon_width 	0
+				icon_y_offset 	0
+				annotation 	1
+				Focus_Of_Control 	(object Focus_Of_Control "" @130
+				    location   	(1974, 376)
+				    line_color 	3342489
+				    InterObjView 	@129
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE)
+				Focus_Of_Control 	(object Focus_Of_Control "" @131
+				    location   	(1974, 1031)
+				    line_color 	3342489
+				    InterObjView 	@129
+				    height     	90
+				    y_coord    	0
+				    Nested     	FALSE))
+			    (object InterMessView "侦查( )" @132
+				location   	(0, 448)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @133
+				    Parent_View 	@132
+				    location   	(620, 404)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"563756340038"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	207
+				    justify    	0
+				    label      	"侦查( )"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				line_color 	3342489
+				client     	@110
+				supplier   	@119
+				Focus_Src  	@111
+				Focus_Entry 	@121
+				origin     	(424, 448)
+				terminus   	(816, 448)
+				ordinal    	0)
+			    (object InterMessView "发现牛群" @134
+				location   	(0, 553)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @135
+				    Parent_View 	@134
+				    location   	(621, 509)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"5637566802F7"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	263
+				    justify    	0
+				    label      	"发现牛群"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	1)
+				line_color 	3342489
+				client     	@119
+				supplier   	@110
+				Focus_Src  	@121
+				Focus_Entry 	@112
+				origin     	(816, 553)
+				terminus   	(425, 553)
+				ordinal    	1)
+			    (object InterMessView "埋伏( )" @136
+				location   	(0, 730)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @137
+				    Parent_View 	@136
+				    location   	(815, 686)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"5637569802AA"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	207
+				    justify    	0
+				    label      	"埋伏( )"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				line_color 	3342489
+				client     	@110
+				supplier   	@122
+				Focus_Src  	@113
+				Focus_Entry 	@124
+				origin     	(424, 730)
+				terminus   	(1206, 730)
+				ordinal    	2)
+			    (object InterMessView "驱赶( )" @138
+				location   	(0, 872)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @139
+				    Parent_View 	@138
+				    location   	(1001, 828)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"563756D201AF"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	207
+				    justify    	0
+				    label      	"驱赶( )"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				line_color 	3342489
+				client     	@110
+				supplier   	@126
+				Focus_Src  	@114
+				Focus_Entry 	@128
+				origin     	(424, 872)
+				terminus   	(1578, 872)
+				ordinal    	3)
+			    (object InterMessView "包抄( )" @140
+				location   	(0, 1031)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @141
+				    Parent_View 	@140
+				    location   	(1191, 987)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"563756DD019D"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	207
+				    justify    	0
+				    label      	"包抄( )"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				line_color 	3342489
+				client     	@110
+				supplier   	@129
+				Focus_Src  	@115
+				Focus_Entry 	@131
+				origin     	(424, 1031)
+				terminus   	(1958, 1031)
+				ordinal    	4)
+			    (object InterMessView "聚歼" @142
+				location   	(0, 1178)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @143
+				    Parent_View 	@142
+				    location   	(815, 1134)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"563756E800A0"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	163
+				    justify    	0
+				    label      	"聚歼"
+				    pctDist    	0.500000
+				    height     	45
+				    orientation 	0)
+				line_color 	3342489
+				client     	@110
+				supplier   	@122
+				Focus_Src  	@116
+				Focus_Entry 	@125
+				origin     	(424, 1178)
+				terminus   	(1206, 1178)
+				ordinal    	5)
+			    (object SelfMessView "下令进食( )" @144
+				location   	(0, 1331)
+				font       	(object Font
+				    size       	12
+				    face       	"Arial"
+				    bold       	FALSE
+				    italics    	FALSE
+				    underline  	FALSE
+				    strike     	FALSE
+				    color      	0
+				    default_color 	TRUE)
+				label      	(object SegLabel @145
+				    Parent_View 	@144
+				    location   	(545, 1302)
+				    font       	(object Font
+					size       	12
+					face       	"Arial"
+					bold       	FALSE
+					italics    	FALSE
+					underline  	FALSE
+					strike     	FALSE
+					color      	0
+					default_color 	TRUE)
+				    quidu      	"5637570802FC"
+				    anchor_loc 	1
+				    nlines     	1
+				    max_width  	307
+				    justify    	0
+				    label      	"下令进食( )"
+				    pctDist    	0.800000
+				    height     	30
+				    orientation 	0)
+				line_color 	3342489
+				client     	@110
+				supplier   	@110
+				Focus_Src  	@117
+				Focus_Entry 	@118
+				origin     	(425, 1331)
+				terminus   	(575, 1331)
+				ordinal    	6))))))
 	logical_presentations 	(list unit_reference_list
 	    (object ClassDiagram "Main"
 		quid       	"5635FCF403A3"
@@ -1700,7 +3499,7 @@
 		origin_x   	0
 		origin_y   	0
 		items      	(list diagram_item_list
-		    (object ClassView "Class" "Logical View::宠物" @69
+		    (object ClassView "Class" "Logical View::宠物" @146
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1716,7 +3515,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@69
+			    Parent_View 	@146
 			    location   	(663, 14)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1728,7 +3527,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE0D014A"
 			compartment 	(object Compartment
-			    Parent_View 	@69
+			    Parent_View 	@146
 			    location   	(663, 81)
 			    font       	(object Font
 				size       	10
@@ -1748,7 +3547,7 @@
 			height     	444
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::哈巴狗" @70
+		    (object ClassView "Class" "Logical View::哈巴狗" @147
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1764,7 +3563,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@70
+			    Parent_View 	@147
 			    location   	(70, 458)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1776,7 +3575,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE14015E"
 			compartment 	(object Compartment
-			    Parent_View 	@70
+			    Parent_View 	@147
 			    location   	(70, 525)
 			    font       	(object Font
 				size       	10
@@ -1796,7 +3595,7 @@
 			height     	194
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::波斯猫" @71
+		    (object ClassView "Class" "Logical View::波斯猫" @148
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1812,7 +3611,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@71
+			    Parent_View 	@148
 			    location   	(657, 526)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1824,7 +3623,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE1803D7"
 			compartment 	(object Compartment
-			    Parent_View 	@71
+			    Parent_View 	@148
 			    location   	(657, 593)
 			    font       	(object Font
 				size       	10
@@ -1844,7 +3643,7 @@
 			height     	194
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::画眉鸟" @72
+		    (object ClassView "Class" "Logical View::画眉鸟" @149
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1860,7 +3659,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@72
+			    Parent_View 	@149
 			    location   	(1313, 498)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1872,7 +3671,7 @@
 			fill_color 	13434879
 			quidu      	"5635FE1D0017"
 			compartment 	(object Compartment
-			    Parent_View 	@72
+			    Parent_View 	@149
 			    location   	(1313, 565)
 			    font       	(object Font
 				size       	10
@@ -1892,28 +3691,28 @@
 			height     	194
 			annotation 	8
 			autoResize 	TRUE)
-		    (object InheritView "" @73
+		    (object InheritView "" @150
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE37006A"
-			client     	@70
-			supplier   	@69
+			client     	@147
+			supplier   	@146
 			line_style 	0)
-		    (object InheritView "" @74
+		    (object InheritView "" @151
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE380355"
-			client     	@71
-			supplier   	@69
+			client     	@148
+			supplier   	@146
 			line_style 	0)
-		    (object InheritView "" @75
+		    (object InheritView "" @152
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE3A0332"
-			client     	@72
-			supplier   	@69
+			client     	@149
+			supplier   	@146
 			line_style 	0)
-		    (object ClassView "Class" "Logical View::学生" @76
+		    (object ClassView "Class" "Logical View::学生" @153
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1928,7 +3727,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@76
+			    Parent_View 	@153
 			    location   	(135, 1112)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1943,7 +3742,7 @@
 			height     	142
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::老师" @77
+		    (object ClassView "Class" "Logical View::老师" @154
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -1958,7 +3757,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@77
+			    Parent_View 	@154
 			    location   	(213, 824)
 			    fill_color 	13434879
 			    nlines     	1
@@ -1973,31 +3772,31 @@
 			height     	142
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$24" @78
+		    (object AssociationViewNew "$UNNAMED$26" @155
 			location   	(269, 1024)
 			stereotype 	TRUE
 			line_color 	3342489
 			quidu      	"5635FE3F01B4"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$25" @79
-				Parent_View 	@78
+			    (object RoleView "$UNNAMED$27" @156
+				Parent_View 	@155
 				location   	(-40, 143)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE4000C8"
-				client     	@78
-				supplier   	@76
+				client     	@155
+				supplier   	@153
 				line_style 	0)
-			    (object RoleView "$UNNAMED$26" @80
-				Parent_View 	@78
+			    (object RoleView "$UNNAMED$28" @157
+				Parent_View 	@155
 				location   	(-40, 143)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE4000CA"
-				client     	@78
-				supplier   	@77
+				client     	@155
+				supplier   	@154
 				line_style 	0)))
-		    (object ClassView "Class" "Logical View::领导人" @81
+		    (object ClassView "Class" "Logical View::领导人" @158
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -2012,7 +3811,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@81
+			    Parent_View 	@158
 			    location   	(825, 1115)
 			    fill_color 	13434879
 			    nlines     	1
@@ -2027,7 +3826,7 @@
 			height     	142
 			annotation 	8
 			autoResize 	TRUE)
-		    (object ClassView "Class" "Logical View::老百姓" @82
+		    (object ClassView "Class" "Logical View::老百姓" @159
 			ShowCompartmentStereotypes 	TRUE
 			IncludeAttribute 	TRUE
 			IncludeOperation 	TRUE
@@ -2042,7 +3841,7 @@
 			    color      	0
 			    default_color 	TRUE)
 			label      	(object ItemLabel
-			    Parent_View 	@82
+			    Parent_View 	@159
 			    location   	(868, 796)
 			    fill_color 	13434879
 			    nlines     	1
@@ -2057,7 +3856,7 @@
 			height     	142
 			annotation 	8
 			autoResize 	TRUE)
-		    (object AssociationViewNew "$UNNAMED$27" @83
+		    (object AssociationViewNew "$UNNAMED$29" @160
 			location   	(961, 1012)
 			font       	(object Font
 			    size       	12
@@ -2072,23 +3871,23 @@
 			line_color 	3342489
 			quidu      	"5635FE4303A1"
 			roleview_list 	(list RoleViews
-			    (object RoleView "$UNNAMED$28" @84
-				Parent_View 	@83
+			    (object RoleView "$UNNAMED$30" @161
+				Parent_View 	@160
 				location   	(-23, 159)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE44012F"
-				client     	@83
-				supplier   	@81
+				client     	@160
+				supplier   	@158
 				line_style 	0)
-			    (object RoleView "$UNNAMED$29" @85
-				Parent_View 	@83
+			    (object RoleView "$UNNAMED$31" @162
+				Parent_View 	@160
 				location   	(-23, 159)
 				stereotype 	TRUE
 				line_color 	3342489
 				quidu      	"5635FE440131"
-				client     	@83
-				supplier   	@82
+				client     	@160
+				supplier   	@159
 				line_style 	0)))))))
     root_subsystem 	(object SubSystem "Component View"
 	quid       	"5635FCF40154"
