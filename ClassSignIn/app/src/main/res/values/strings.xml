@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">ClassSignIn</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置服务器</string>
+    <string name="button_verify">点击开始签到</string>
+    <string name="button_register">点击录入声纹</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="welcome">欢迎使用课堂声纹签到系统，请在下面选择你的学号。如果没有显示学号，点击此处加载。</string>
+    <string name="please_verify">请签到。</string>
+    <string name="please_register">你的声纹还未录入系统，请先录入声纹。</string>
+    <string name="action_admin">我是学委</string>
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="welcome_admin">学委界面</string>
+    <string name="title_activity_settings">Settings</string>
+</resources>

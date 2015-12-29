@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="cn.edu.fjnu.math.classsignin.LoginActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_admin"
+        android:title="@string/action_admin"
+        app:showAsAction="ifRoom"/>
+</menu>
+<!-- From: file:/C:/Users/chendong/Documents/Developer/Android/AndroidStudioProjects/ClassSignIn/app/src/main/res/menu/menu_login.xml -->
